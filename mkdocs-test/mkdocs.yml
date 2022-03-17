@@ -1,0 +1,24 @@
+site_name: Tile
+repo_url: https://github.com/datapane/datapane
+repo_name: tile-dev/tile
+
+theme:
+  name: material
+  logo: /assets/tile.svg
+  font: 
+    text: Inter
+  custom_dir: docs/overrides/
+  features:
+    - navigation.tabs
+
+nav:
+    - Home: index.md
+    - Learn:
+      - 'What is Tile?' : 'learn/what.md'
+      - 'Why Tile?' : 'learn/why.md'
+      - 'Architecture & Philosophy' : 'learn/architecture.md'
+      - 'Use-cases': 'learn/usecases.md'
+      - 'FAQ': 'learn/faq.md'
+
+    - Community: 
+      - 'community.md'
