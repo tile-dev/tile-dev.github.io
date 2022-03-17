@@ -1,0 +1,96 @@
+site_name: Tile
+site_url: https://tile.dev
+repo_url: https://github.com/tile-dev/tile
+repo_name: tile-dev/tile
+copyright: Copyright &copy; 2023 Tile by Datapane. All rights reserved.
+
+
+
+
+nav:
+  - Home: index.md
+  - Dev API:
+    - Getting Started : api/getting-started.md
+  - OLD-Home: old_index.md
+  # - Community: community.md
+  - OLD-About:
+    - What is Tile? : old_about/what.md
+    - Mission : old_about/mission.md
+    - Roadmap : old_about/roadmap.md
+    - Use-cases: old_about/usecases.md
+    - FAQ: old_about/faq.md
+    - Comparisons: old_about/comparisons.md
+
+
+theme:
+  name: material
+  logo: assets/tile.svg
+  favicon: assets/tile.svg
+  custom_dir: overrides
+  features:
+    # SPA-style
+    # - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # sections doesn't make sense with tabs
+    #- navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    #- content.tabs.link
+  palette:
+    # include_sidebar: true
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font: 
+    text: Inter
+    code: IBM Plex Mono
+
+extra_css:
+  - assets/extra.css
+
+plugins:
+  - search:
+      lang: en
+  #- minify:
+  #    minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      baselevel: 1  # default
+  - meta
+  - admonition
+  - abbr
+  - def_list
+  - footnotes
+  - attr_list
+  - md_in_html
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
