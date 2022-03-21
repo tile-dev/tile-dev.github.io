@@ -1,16 +1,25 @@
 site_name: Tile
 repo_url: https://github.com/datapane/datapane
 repo_name: tile-dev/tile
+extra_css:
+  - stylesheets/extra.css
 
 theme:
   name: material
+  palette:
+    scheme: tailwind
   logo: /assets/tile.svg
   font: 
     text: Inter
   custom_dir: docs/overrides/
   features:
     - navigation.tabs
-
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
 nav:
     - Home: index.md
     - Learn:
@@ -19,6 +28,8 @@ nav:
       - 'Architecture & Philosophy' : 'learn/architecture.md'
       - 'Use-cases': 'learn/usecases.md'
       - 'FAQ': 'learn/faq.md'
-
+      - 'Comparisons' : 'learn/comparisons.md'
+    - Usage docs:
+      - Getting Started : 'usage-docs/getting-started.md'
     - Community: 
       - 'community.md'

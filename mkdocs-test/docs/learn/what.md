@@ -2,12 +2,17 @@ Tile is an SDK and architecture for creating data-driven applications. You can u
 
 Tile aims to be the fastest and easiest way for data teams to share insights in a code-first way, with features such as:
 
-- Static generation of reports and serverless app-running both supported out of the box
-- Rich component library compatible with the majority of the Python data ecosystem (such as Pandas, Altair, Plotly)
+- Static generation of standalone HTML reports
+- Serverless app-running with parameters 
+- Plot and data components compatible with the majority of the Python data ecosystem (such as Pandas, Altair, Plotly)
 - Built in client-side report components, such as dropdowns, selects, and interactive datatables
 - Fully integratable into existing Python environments, like Jupyter and Spark
 
-## How can I use Tile?
+## What isn't Tile?
+- Tile is not a realtime reactive web framework like Streamlit or Dash
+- Tile is not an analysis environment like Jupyter
+
+## What can I build with Tile?
 
 ### Static reports
 
@@ -35,10 +40,16 @@ df = ...
 t.View(t.DataTable(df)).save_report(path='report.html')
 ```
 
-### Serverless apps
+### Data apps
 
 #### Introduction
 
+Static reports are great to start with, but you might need your end-users to be able to run your Python script or Jupyter Notebook themselves. 
+
+Tile allows you to turn any Python script or Notebook into an API which can be called from inside your views. 
+Need your report to 
+
+Tile
 Tile's Runner makes it simple to deploy a script or Jupyter Notebook so that end-users can run it with parameters. You can combine it with Views to create interactive data apps.
 
 Runner is an open standard for defining how your data science code should run and what parameters it takes. It's execution is serverless, which means for each request, it spins up a docker container, executes the workload, and shuts down.
