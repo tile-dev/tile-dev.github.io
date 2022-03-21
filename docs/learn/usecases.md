@@ -8,7 +8,7 @@ When you want to impress potential or existing customers with interactive data p
 
 ## **Programmatic reporting**
 
-**JTBD:** When you need to save time by automating report creation, you can use Tile to programmatically generate reports (instead of building them manually).
+When you need to save time by automating report creation, you can use Tile to programmatically generate reports (instead of building them manually).
 
 ## **Self-service apps**
 

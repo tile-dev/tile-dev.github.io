@@ -19,4 +19,4 @@ Reports in Tile are statically generated. They can be exported as HTML files whi
 
 Tile's execution model allows you to build automated reports (that update on a schedule), or you can add superpowers to your reports by turning them into apps which can be run with parameters.
 
-![Architecture-1](/assets/architecture-2.png)
+![Architecture-2](/assets/architecture-2.png)
