@@ -1,18 +1,23 @@
-Tile is an SDK and architecture for creating data-driven applications. You can use it to create static documents (such as reports), automated dashboards, or parameterized apps which run in the cloud. 
+Tile is an SDK and architecture for creating data-driven applications using Python. 
 
 Tile aims to be the fastest and easiest way for data teams to share insights in a code-first way, with features such as:
 
-- Static generation of standalone HTML reports
-- Serverless app-running with parameters 
+- Static generation of 100% standalone HTML apps which don't require backends
+- Serverless app-running with backend code execution through dynamic forms
 - Plot and data components compatible with the majority of the Python data ecosystem (such as Pandas, Altair, Plotly)
-- Built in client-side report components, such as dropdowns, selects, and interactive datatables
-- Fully integratable into existing Python environments, like Jupyter and Spark
-
-## What isn't Tile?
-- Tile is not a realtime reactive web framework like Streamlit or Dash
-- Tile is not an analysis environment like Jupyter
+- Built in client-side layout components, such as dropdowns, selects, grids
+- Fully interactive datatables with exploration and export
+- Integrates into existing Python environments, like Jupyter and Spark
 
 ## What can I build with Tile?
+
+Tile shuns the idea that any app interaction requires a running backend server. Instead, the front-end and the backend are decoupled, similar to how many web frameworks and static-site generators work.
+
+This is important because it means that you can create apps in various ways, depending on your use case:
+
+1. Need to share ad-hoc plots and data from inside of a notebook? Using Tile, you can prerender an HTML single-page application, which doesn't even require a running server (like an interactive PDF!)
+2. Want to build an automated dashboard which updates every five minutes? Add Tile to a GitHub Action or cron job to programmatically update your report on a cadence. 
+3. Need your end users to enter parameters and generate results on-demand? Add forms to your report which execute your notebooks or scripts on the backend.
 
 ### Static reports
 
@@ -29,56 +34,71 @@ Tile also provides a rich selection of layout and interactive components, such a
 
 Views can replace creating a report in a BI tool, such as Looker or Tableau.
 
-#### Example
-
 ```python
-import pandas as pd
-import tile-dev as t
+import tile_dev as t
+import snowflake.connector
+from internal_lib import forecast
 
-df = ...
+conn = snowflake.connector.connect(...)
+users = conn.execute_query('get_users.sql').fetchall()
+f_data, f_plot = forecast.predict(df)
 
-t.View(t.DataTable(df)).save_report(path='report.html')
+sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
+
+t.View(
+    t.Plot(sales_v_profit, name='sale_v_profit'),
+    t.DataTable(f_data, name='forecast_data'),
+    t.Plot(f_plot, name='forecast_plot')
+).save(path='report.html')
 ```
 
 ### Data apps
 
 #### Introduction
 
-Static reports are great to start with, but you might need your end-users to be able to run your Python script or Jupyter Notebook themselves. 
+Static reports are great to start with. They are portable, scalable, and fast to create.
 
-Tile allows you to turn any Python script or Notebook into an API which can be called from inside your views. 
-Need your report to 
+But eventually you might need your end-users to be able to _run_ your Python script or Jupyter Notebook themselves. 
 
-Tile
-Tile's Runner makes it simple to deploy a script or Jupyter Notebook so that end-users can run it with parameters. You can combine it with Views to create interactive data apps.
+Expanding on the above example, we can add a dynamic form to our view which users can run with parameters.
 
-Runner is an open standard for defining how your data science code should run and what parameters it takes. It's execution is serverless, which means for each request, it spins up a docker container, executes the workload, and shuts down.
+```python title='analysis.ipynb'
+# API TBD - this is a mock!
+import tile_dev as t
+import snowflake.connector
+from internal_lib import forecast
 
+conn = snowflake.connector.connect(...)
+users = conn.execute_query('get_users.sql').fetchall()
 
-#### Example
+sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
 
-```yaml
-script: calculator.ipynb
-name: startup_calculator
-repo: https://github.com/datapane/gallery/tree/master/startup-calculator
-title: Startup Burn Calculator 
-parameters: 
-  - name: current_cash
-    description: The amount of cash you have in the bank
-    type: integer
-    required: True
-    default: 100000
-    min: 0
-  - name: forecast_length_years
-    description: The number of years to forecast
-    type: integer
-    required: True
-    min: 1
-    max: 10
-    default: 2
+t.View(
+    t.Plot(sales_v_profit, name='sale_v_profit'),
+    t.Form(id='forecast', params={'days' : 'integer', 'item': 'string'})
+    t.DataTable(f_data, name='forecast_data'),
+    t.Plot(f_plot, name='forecast_plot')
+).Backend(
+    t.Function(path='./forecast.py', id='forecast')
+).run_app()
 ```
 
-```bash
-$ tile runner exec
-[-] Building startup_calculator...
+```python title='forecast.py'
+# API TBD - this is a mock!
+import tile as t
+from internal_lib import forecast
+
+days = t.Params('days')
+item = t.Params('items')
+
+f_data, f_plot = forecast.predict(df, item, days)
+
+t.View(
+    t.DataTable(f_data, name='forecast_data'),
+    t.Plot(f_plot, name='forecast_plot')
+)
 ```
+
+## What is Tile not?
+- Tile is not a realtime reactive web framework like Streamlit or Dash
+- Tile is not an analysis environment like Jupyter

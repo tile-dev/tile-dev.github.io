@@ -24,8 +24,7 @@ nav:
     - Home: index.md
     - Learn:
       - 'What is Tile?' : 'learn/what.md'
-      - 'Why Tile?' : 'learn/why.md'
-      - 'Architecture & Philosophy' : 'learn/architecture.md'
+      - 'Mission' : 'learn/mission.md'
       - 'Use-cases': 'learn/usecases.md'
       - 'FAQ': 'learn/faq.md'
       - 'Comparisons' : 'learn/comparisons.md'
