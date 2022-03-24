@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-isnt-tile" class="md-skip">
+        <a href="#what-can-i-build-with-tile" class="md-skip">
           Skip to content
         </a>
       
@@ -359,13 +359,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-isnt-tile" class="md-nav__link">
-    What isn't Tile?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-can-i-build-with-tile" class="md-nav__link">
     What can I build with Tile?
   </a>
@@ -377,19 +370,6 @@
   <a href="#static-reports" class="md-nav__link">
     Static reports
   </a>
-  
-    <nav class="md-nav" aria-label="Static reports">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -408,20 +388,20 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
-    Example
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-tile-not" class="md-nav__link">
+    What is Tile not?
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -440,22 +420,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../why/" class="md-nav__link">
-        Why Tile?
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
-        Architecture & Philosophy
+      <a href="../mission/" class="md-nav__link">
+        Mission
       </a>
     </li>
   
@@ -631,13 +597,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-isnt-tile" class="md-nav__link">
-    What isn't Tile?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#what-can-i-build-with-tile" class="md-nav__link">
     What can I build with Tile?
   </a>
@@ -649,19 +608,6 @@
   <a href="#static-reports" class="md-nav__link">
     Static reports
   </a>
-  
-    <nav class="md-nav" aria-label="Static reports">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -680,20 +626,20 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
-    Example
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-tile-not" class="md-nav__link">
+    What is Tile not?
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -717,21 +663,24 @@
 
   <h1>What is Tile?</h1>
 
-<p>Tile is an SDK and architecture for creating data-driven applications. You can use it to create static documents (such as reports), automated dashboards, or parameterized apps which run in the cloud. </p>
+<p>Tile is an SDK and architecture for creating data-driven applications using Python. </p>
 <p>Tile aims to be the fastest and easiest way for data teams to share insights in a code-first way, with features such as:</p>
 <ul>
-<li>Static generation of standalone HTML reports</li>
-<li>Serverless app-running with parameters </li>
+<li>Static generation of 100% standalone HTML apps which don't require backends</li>
+<li>Serverless app-running with backend code execution through dynamic forms</li>
 <li>Plot and data components compatible with the majority of the Python data ecosystem (such as Pandas, Altair, Plotly)</li>
-<li>Built in client-side report components, such as dropdowns, selects, and interactive datatables</li>
-<li>Fully integratable into existing Python environments, like Jupyter and Spark</li>
-</ul>
-<h2 id="what-isnt-tile">What isn't Tile?</h2>
-<ul>
-<li>Tile is not a realtime reactive web framework like Streamlit or Dash</li>
-<li>Tile is not an analysis environment like Jupyter</li>
+<li>Built in client-side layout components, such as dropdowns, selects, grids</li>
+<li>Fully interactive datatables with exploration and export</li>
+<li>Integrates into existing Python environments, like Jupyter and Spark</li>
 </ul>
 <h2 id="what-can-i-build-with-tile">What can I build with Tile?</h2>
+<p>Tile shuns the idea that any app interaction requires a running backend server. Instead, the front-end and the backend are decoupled, similar to how many web frameworks and static-site generators work.</p>
+<p>This is important because it means that you can create apps in various ways, depending on your use case:</p>
+<ol>
+<li>Need to share ad-hoc plots and data from inside of a notebook? Using Tile, you can prerender an HTML single-page application, which doesn't even require a running server (like an interactive PDF!)</li>
+<li>Want to build an automated dashboard which updates every five minutes? Add Tile to a GitHub Action or cron job to programmatically update your report on a cadence. </li>
+<li>Need your end users to enter parameters and generate results on-demand? Add forms to your report which execute your notebooks or scripts on the backend.</li>
+</ol>
 <h3 id="static-reports">Static reports</h3>
 <p>Tile allows you to generate static HTML reports from your existing environment, such as Jupyter, Airflow, or Spark. They are fully standalone and do not require a running Python server for viewing. Instead, you can export them as HTML reports or upload them to web-based hosts.</p>
 <p>Views can contain components which wrap up the Python objects inside your analysis. Out of the box, you can add formats such as:</p>
@@ -743,45 +692,65 @@
 </ul>
 <p>Tile also provides a rich selection of layout and interactive components, such as grids, dropdowns, selects, and a fully interactive DataTable.</p>
 <p>Views can replace creating a report in a BI tool, such as Looker or Tableau.</p>
-<h4 id="example">Example</h4>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">tile</span><span class="o">-</span><span class="n">dev</span> <span class="k">as</span> <span class="n">t</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">tile_dev</span> <span class="k">as</span> <span class="nn">t</span>
+<span class="kn">import</span> <span class="nn">snowflake.connector</span>
+<span class="kn">from</span> <span class="nn">internal_lib</span> <span class="kn">import</span> <span class="n">forecast</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">snowflake</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">users</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">execute_query</span><span class="p">(</span><span class="s1">&#39;get_users.sql&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+<span class="n">f_data</span><span class="p">,</span> <span class="n">f_plot</span> <span class="o">=</span> <span class="n">forecast</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 
-<span class="n">t</span><span class="o">.</span><span class="n">View</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">DataTable</span><span class="p">(</span><span class="n">df</span><span class="p">))</span><span class="o">.</span><span class="n">save_report</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;report.html&#39;</span><span class="p">)</span>
+<span class="n">sales_v_profit</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;profit&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="n">t</span><span class="o">.</span><span class="n">View</span><span class="p">(</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="n">sales_v_profit</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sale_v_profit&#39;</span><span class="p">),</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">DataTable</span><span class="p">(</span><span class="n">f_data</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_data&#39;</span><span class="p">),</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="n">f_plot</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_plot&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;report.html&#39;</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="data-apps">Data apps</h3>
 <h4 id="introduction">Introduction</h4>
-<p>Static reports are great to start with, but you might need your end-users to be able to run your Python script or Jupyter Notebook themselves. </p>
-<p>Tile allows you to turn any Python script or Notebook into an API which can be called from inside your views. 
-Need your report to </p>
-<p>Tile
-Tile's Runner makes it simple to deploy a script or Jupyter Notebook so that end-users can run it with parameters. You can combine it with Views to create interactive data apps.</p>
-<p>Runner is an open standard for defining how your data science code should run and what parameters it takes. It's execution is serverless, which means for each request, it spins up a docker container, executes the workload, and shuts down.</p>
-<h4 id="example_1">Example</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">calculator.ipynb</span><span class="w"></span>
-<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">startup_calculator</span><span class="w"></span>
-<span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/datapane/gallery/tree/master/startup-calculator</span><span class="w"></span>
-<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Startup Burn Calculator</span><span class="w"> </span>
-<span class="nt">parameters</span><span class="p">:</span><span class="w"> </span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">current_cash</span><span class="w"></span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The amount of cash you have in the bank</span><span class="w"></span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span><span class="w"></span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span><span class="w"></span>
-<span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100000</span><span class="w"></span>
-<span class="w">    </span><span class="nt">min</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">forecast_length_years</span><span class="w"></span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The number of years to forecast</span><span class="w"></span>
-<span class="w">    </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span><span class="w"></span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">True</span><span class="w"></span>
-<span class="w">    </span><span class="nt">min</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span><span class="w"></span>
-<span class="w">    </span><span class="nt">max</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span><span class="w"></span>
-<span class="w">    </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
+<p>Static reports are great to start with. They are portable, scalable, and fast to create.</p>
+<p>But eventually you might need your end-users to be able to <em>run</em> your Python script or Jupyter Notebook themselves. </p>
+<p>Expanding on the above example, we can add a dynamic form to our view which users can run with parameters.</p>
+<div class="highlight"><span class="filename">analysis.ipynb</span><pre><span></span><code><span class="c1"># API TBD - this is a mock!</span>
+<span class="kn">import</span> <span class="nn">tile_dev</span> <span class="k">as</span> <span class="nn">t</span>
+<span class="kn">import</span> <span class="nn">snowflake.connector</span>
+<span class="kn">from</span> <span class="nn">internal_lib</span> <span class="kn">import</span> <span class="n">forecast</span>
+
+<span class="n">conn</span> <span class="o">=</span> <span class="n">snowflake</span><span class="o">.</span><span class="n">connector</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="n">users</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">execute_query</span><span class="p">(</span><span class="s1">&#39;get_users.sql&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
+
+<span class="n">sales_v_profit</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">users</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;sales&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;profit&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+
+<span class="n">t</span><span class="o">.</span><span class="n">View</span><span class="p">(</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="n">sales_v_profit</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sale_v_profit&#39;</span><span class="p">),</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Form</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s1">&#39;forecast&#39;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;days&#39;</span> <span class="p">:</span> <span class="s1">&#39;integer&#39;</span><span class="p">,</span> <span class="s1">&#39;item&#39;</span><span class="p">:</span> <span class="s1">&#39;string&#39;</span><span class="p">})</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">DataTable</span><span class="p">(</span><span class="n">f_data</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_data&#39;</span><span class="p">),</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="n">f_plot</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_plot&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">Backend</span><span class="p">(</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Function</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;./forecast.py&#39;</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s1">&#39;forecast&#39;</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">run_app</span><span class="p">()</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>$ tile runner <span class="nb">exec</span>
-<span class="o">[</span>-<span class="o">]</span> Building startup_calculator...
+<div class="highlight"><span class="filename">forecast.py</span><pre><span></span><code><span class="c1"># API TBD - this is a mock!</span>
+<span class="kn">import</span> <span class="nn">tile</span> <span class="k">as</span> <span class="nn">t</span>
+<span class="kn">from</span> <span class="nn">internal_lib</span> <span class="kn">import</span> <span class="n">forecast</span>
+
+<span class="n">days</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">Params</span><span class="p">(</span><span class="s1">&#39;days&#39;</span><span class="p">)</span>
+<span class="n">item</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">Params</span><span class="p">(</span><span class="s1">&#39;items&#39;</span><span class="p">)</span>
+
+<span class="n">f_data</span><span class="p">,</span> <span class="n">f_plot</span> <span class="o">=</span> <span class="n">forecast</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">item</span><span class="p">,</span> <span class="n">days</span><span class="p">)</span>
+
+<span class="n">t</span><span class="o">.</span><span class="n">View</span><span class="p">(</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">DataTable</span><span class="p">(</span><span class="n">f_data</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_data&#39;</span><span class="p">),</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">Plot</span><span class="p">(</span><span class="n">f_plot</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;forecast_plot&#39;</span><span class="p">)</span>
+<span class="p">)</span>
 </code></pre></div>
+<h2 id="what-is-tile-not">What is Tile not?</h2>
+<ul>
+<li>Tile is not a realtime reactive web framework like Streamlit or Dash</li>
+<li>Tile is not an analysis environment like Jupyter</li>
+</ul>
 
               
             </article>
@@ -811,13 +780,13 @@ Tile's Runner makes it simple to deploy a script or Jupyter Notebook so that end
       
       
         
-        <a href="../why/" class="md-footer__link md-footer__link--next" aria-label="Next: Why Tile?" rel="next">
+        <a href="../mission/" class="md-footer__link md-footer__link--next" aria-label="Next: Mission" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Why Tile?
+              Mission
             </div>
           </div>
           <div class="md-footer__button md-icon">

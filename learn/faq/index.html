@@ -343,22 +343,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../why/" class="md-nav__link">
-        Why Tile?
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
-        Architecture & Philosophy
+      <a href="../mission/" class="md-nav__link">
+        Mission
       </a>
     </li>
   
@@ -432,6 +418,40 @@
   <a href="#is-tile-free" class="md-nav__link">
     Is Tile free?
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-should-i-not-use-tile" class="md-nav__link">
+    When should I not use Tile?
+  </a>
+  
+    <nav class="md-nav" aria-label="When should I not use Tile?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#realtime-apps" class="md-nav__link">
+    Realtime apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classic-bi" class="md-nav__link">
+    Classic BI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-code" class="md-nav__link">
+    No-code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -605,6 +625,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#when-should-i-not-use-tile" class="md-nav__link">
+    When should I not use Tile?
+  </a>
+  
+    <nav class="md-nav" aria-label="When should I not use Tile?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#realtime-apps" class="md-nav__link">
+    Realtime apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#classic-bi" class="md-nav__link">
+    Classic BI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-code" class="md-nav__link">
+    No-code
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -625,9 +679,19 @@
 
   <h1>FAQ</h1>
 
-<h4 id="is-tile-production-ready">Is Tile production ready?</h4>
-<h4 id="who-builds-tile">Who builds Tile?</h4>
-<h4 id="is-tile-free">Is Tile free?</h4>
+<h3 id="is-tile-production-ready">Is Tile production ready?</h3>
+<p>Tile is a repackaging of what was previously Datapane's internal reporting library, which has served millions of reports to hundreds of thousands of people. </p>
+<h3 id="who-builds-tile">Who builds Tile?</h3>
+<p>Tile is an open-source community library which is open to contributions, but is most actively developed by the Datapane team.</p>
+<h3 id="is-tile-free">Is Tile free?</h3>
+<p>Yes, Tile is free and will forever be free. </p>
+<h3 id="when-should-i-not-use-tile">When should I not use Tile?</h3>
+<h4 id="realtime-apps">Realtime apps</h4>
+<p>Tile's execution model is serverless and based on request-response. If you want realtime apps (where you drag a slider and see updates in realtime, without hitting a submit button), Tile isn't currently a great fit. In this case, we'd recommend something like Streamlit or Dash.</p>
+<h4 id="classic-bi">Classic BI</h4>
+<p>If you are just computing some simple KPIs on a data warehouse and not doing anything programmatic, you may be better served by SQL and your regular BI tool.</p>
+<h4 id="no-code">No-code</h4>
+<p>If you want non-technical people to build reports who want to use a drag-and-drop UI, Tile isn't the right fit.</p>
 
               
             </article>
