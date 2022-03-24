@@ -1,5 +1,5 @@
 site_name: Tile
-repo_url: https://github.com/datapane/datapane
+repo_url: https://github.com/tile-dev/tile
 repo_name: tile-dev/tile
 extra_css:
   - stylesheets/extra.css
