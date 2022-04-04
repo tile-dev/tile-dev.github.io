@@ -7,7 +7,7 @@ extra_css:
 theme:
   name: material
   palette:
-    primary: indigo
+    theme: indigo
   logo: /assets/tile.svg
   font: 
     text: Inter
