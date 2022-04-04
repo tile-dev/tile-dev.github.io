@@ -6,7 +6,7 @@ description: Installing and setting up the Datapane library and API on your devi
 
 ## Installation
 
-Datapane's Python library and CLI can be installed using either `conda` or `pip` on macOS, Windows, or Linux. Datapane supports Python **3.6 - 3.9**.
+Tile is powered by the [Datapane](https://docs.datapane.com/) library, so you'll need to install this first. Datapane's Python library and CLI can be installed using either `conda` or `pip` on macOS, Windows, or Linux. Datapane supports Python **3.6 - 3.9**.
 
 !!! Installing 
 

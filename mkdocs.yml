@@ -7,7 +7,7 @@ extra_css:
 theme:
   name: material
   palette:
-    scheme: tailwind
+    primary: indigo
   logo: /assets/tile.svg
   font: 
     text: Inter
@@ -22,13 +22,15 @@ markdown_extensions:
       alternate_style: true 
 nav:
     - Home: index.md
-    - Learn:
-      - 'What is Tile?' : 'learn/what.md'
-      - 'Mission' : 'learn/mission.md'
-      - 'Use-cases': 'learn/usecases.md'
-      - 'FAQ': 'learn/faq.md'
-      - 'Comparisons' : 'learn/comparisons.md'
-    - Usage docs:
-      - Getting Started : 'usage-docs/getting-started.md'
-    - Community: 
-      - 'community.md'
+    - Community:
+        - 'community.md'
+    - About:
+      - 'What is Tile?' : 'about/what.md'
+      - 'Mission' : 'about/mission.md'
+      - 'Roadmap' : 'about/roadmap.md'
+      - 'Use-cases': 'about/usecases.md'
+      - 'FAQ': 'about/faq.md'
+      - 'Comparisons' : 'about/comparisons.md'
+    - Docs:
+      - Getting Started : 'docs/getting-started.md'
+copyright: Copyright &copy; 2022 Tile by Datapane. All rights reserved.
