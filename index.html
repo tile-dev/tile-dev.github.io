@@ -8,21 +8,23 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+      <link rel="icon" href="assets/tile.svg">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Title - Tile</title>
+        <title>Tile by Datapane - The SDK for creating data apps - Tile</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -30,17 +32,18 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"IBM Plex Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="assets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 <script src="https://cdn.tailwindcss.com"></script>
@@ -48,7 +51,11 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 <style>
-    [hidden]{display:block !important}
+    @media screen and (min-width: 76.1875em) {
+        .md-main {
+            display: none !important;
+        }
+    }
 </style>
 
   </head>
@@ -56,12 +63,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="tailwind" data-md-color-primary="" data-md-color-accent="">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -74,11 +85,13 @@
         <aside class="md-banner">
           <div class="md-banner__inner md-grid md-typeset">
             
+            
   <a href="#" style="color:#eee;">
     Check out our <strong>launch blogpost</strong>!
   </a>
 
           </div>
+          
         </aside>
       
     </div>
@@ -90,11 +103,11 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Tile" class="md-header__button md-logo" aria-label="Tile" data-md-component="logo">
       
-  <img src="/assets/tile.svg" alt="logo">
+  <img src="assets/tile.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -106,17 +119,41 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Title
+              Tile by Datapane - The SDK for creating data apps
             
           </span>
         </div>
       </div>
     </div>
     
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -124,13 +161,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -150,10 +187,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/tile-dev/tile/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/tile-dev/tile" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     tile-dev/tile
@@ -199,40 +236,40 @@
   
   
     <li class="md-tabs__item">
-      <a href="learn/what/" class="md-tabs__link">
-        Learn
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="usage-docs/getting-started/" class="md-tabs__link">
-        Usage docs
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
       <a href="community/" class="md-tabs__link">
         Community
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="about/what/" class="md-tabs__link">
+        About
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="docs/getting-started/" class="md-tabs__link">
+        Docs
       </a>
     </li>
   
@@ -246,285 +283,283 @@
       
 
 <div>
-    <div>
-        <div class="mt-16 mx-auto max-w-7xl px-4 sm:my-24">
+    <div class="bg-gradient-to-br from-indigo-500 to-indigo-400">
+        <div class="mx-auto max-w-7xl px-4 py-24">
             <div class="text-center">
-                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    <span class="block xl:inline">The SDK for building <br/> full-stack data apps</span>
+                <h1 class="text-4xl tracking-tight font-extrabold text-white text-shadow sm:text-5xl">
+                    <span class="block xl:inline">We're building the SDK<br/>for <span class="text-gray-900">creating data apps</span></span>
                     <!-- space -->
                 </h1>
-                <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                    Tile is a full-stack Python SDK for creating reports, dashboards, and apps. </p>
+                <p class="mt-3 max-w-md mx-auto text-base text-white sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    We're just about to release the first part of the stack.<br/>Get involved and help build the rest!</p>
                 <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                     <div class="rounded-md shadow">
-                        <a href="#"
-                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700 md:py-4 md:text-lg md:px-10">
-                            Join the community
+                        <a href="/community"
+                           class="w-full flex items-center justify-center px-6 py-4 border border-transparent text-base font-semibold rounded-md text-indigo-600 bg-white hover:bg-gray-50 md:py-4 md:px-8">
+                            Collaborate with us
                         </a>
                     </div>
                     <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-                        <a href="#"
-                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
-                            Get started
+                        <a href="/about/roadmap"
+                           class="w-full flex items-center justify-center px-6 py-4 border border-transparent text-base font-semibold rounded-md text-white bg-gray-800 hover:bg-gray-900 md:py-4 md:px-8">
+                            View the roadmap
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="py-12 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:text-center">
-                    <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">What is a
-                        full-stack
-                        data app? </p>
-                    <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">More than just another realtime
-                        framework, Tile is a
-                        comprehensive SDK for creating flexible data products for your end-users in seconds. </p>
-                </div>
-
-                <div class="mt-10">
-                    <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-                        <div class="relative">
-                            <dt>
-                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                                    <!-- Heroicon name: outline/globe-alt -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Static generation</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">
-                                Tile shuns the idea that any app interaction requires a running backend server. Instead,
-                                Tile render your
-                                app to an HTML bundle which you can share in seconds through email, GitHub pages, or S3.
-                            </dd>
-                        </div>
-
-                        <div class="relative">
-                            <dt>
-                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                                    <!-- Heroicon name: outline/scale -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Python API for Javascript
-                                    components</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Say goodbye to writing HTML divs, and choose
-                                from a rich set
-                                of composable, interactive components. DataTables, dropdowns, tabs, and selects are
-                                accessible in a single
-                                line of Python.
-                            </dd>
-                        </div>
-
-                        <div class="relative">
-                            <dt>
-                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                                    <!-- Heroicon name: outline/scale -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Serverless backend
-                                    functions</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Want to add interactive forms and run backend
-                                code? Tile
-                                allows you to magically deploy Python functions and Jupyter Notebooks which you can use
-                                in your apps.
-                            </dd>
-                        </div>
-
-                        <div class="relative">
-                            <dt>
-                                <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-sky-500 text-white">
-                                    <!-- Heroicon name: outline/annotation -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
-                                    </svg>
-                                </div>
-                                <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Bring Your Own
-                                    Environment</p>
-                            </dt>
-                            <dd class="mt-2 ml-16 text-base text-gray-500">Tile's ethos is to fit into where you work.
-                                Use Tile inside
-                                of Spark, Airflow, or Jupyter. Add plots and data from the libraries you love, like
-                                Pandas, Plotly, and
-                                Altair.
-                            </dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white">
-            <section class="max-w-6xl mx-auto relative py-16 px-4 sm:px-6 lg:px-8">
-
-                <div class="relative">
-                    <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                        Magic up a
-                        data app</h2>
-                    <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">Tile gives you the flexibility
-                        and power to
-                        create reports, dashboards, and apps in seconds. Focus on the analysis, and let Tile do the hard
-                        work.</p>
-                </div>
-
-
-            </section>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-xs max-w-7xl px-8 mx-auto">
-                <div>
-                    <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
-                        app/notebook.ipynb
-                    </div>
-
-                    <pre><code class="language-python rounded-b h-72">import tile_dev as t
-import snowflake.connector
-from internal_lib import forecast
-
-conn = snowflake.connector.connect(...)
-users = conn.execute_query('get_users.sql').fetchall()
-f_data, f_plot = forecast.predict(df)
-
-sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
-
-t.View(
-    t.Plot(sales_v_profit, name='sale_v_profit'),
-    t.DataTable(f_data, name='forecast_data'),
-    t.Plot(f_plot, name='forecast_plot')
-).save(path='report.html')
-
-  </code>
-</pre>
-                    <span class="text-xl font-semibold">HTML views let you share insights in seconds.</span>
-                    <p class="mt-2 text-base">
-                        Generate rich standalone reports from pandas DataFrames, Python visualizations, and more. All
-                        from the comfort
-                        of your notebook.
-                    </p>
-                </div>
-                <div>
-                    <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
-                        app/notebook.ipynb
-                    </div>
-
-                    <pre><code class="language-python rounded-b h-72">import tile_dev as t
-...
-
-t.View(
-    t.Group(
-      t.Plot(sales_v_profit, name='sale_v_profit'),
-      t.DataTable(f_data, name='forecast_data'),
-      t.Select(
-        t.DataTable(f_data.head(1000), label='First 1000 rows'),
-        t.DataTable(f_data.tail(1000), label='Last 1000 rows'),
-      ),
-      columns=2
-).save(path='report.html')
-
-  </code>
-</pre>
-                    <span class="text-xl font-semibold">Components make it easy to create beautiful UIs.</span>
-                    <p class="mt-2 text-base">
-                        Create interactive reports with dropdowns, interactive tables, and selects -- without writing a
-                        line of HTML or
-                        CSS.
-                    </p>
-                </div>
-                <div>
-                    <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
-                        app/notebook.ipynb
-                    </div>
-
-                    <pre><code class="language-python rounded-b h-72">import tile as t
-
-t.View(
-    t.Plot(sales_v_profit, name='sale_v_profit'),
-    t.Form(name='end-user-params')
-    t.DataTable(f_data, name='forecast_data'),
-    t.Plot(f_plot, name='forecast_plot')
-).Backend(
-    t.Function(name='end-users-params', path='notebook.ipynb')
-).run_app()
-  </code>
-</pre>
-                    <span class="text-xl font-semibold">Functions add backend code to your apps.</span>
-                    <p class="mt-2 text-base">
-                        Want end-users to dynamically run backend scripts and notebooks? Add functions to your reports
-                        which return
-                        dynamic views.
-                    </p>
-                </div>
-                <div>
-                    <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
-                        app/notebook.ipynb
-                    </div>
-
-                    <pre><code class="language-python rounded-b h-72">import tile_dev as t
-import snowflake.connector
-from internal_lib import forecast
-
-conn = snowflake.connector.connect(...)
-users = conn.execute_query('get_users.sql').fetchall()
-f_data, f_plot = forecast.predict(df)
-
-sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
-
-t.View(
-    t.Plot(sales_v_profit, name='sale_v_profit'),
-    t.Form(name='foo')
-    t.DataTable(f_data, name='forecast_data'),
-    t.Plot(f_plot, name='forecast_plot')
-).Backend(
-    t.Function(name='foo', path='foo.ipynb')
-).render(deploy=t.Deployment.S3)
-
-  </code>
-</pre>
-                    <span class="text-xl font-semibold">Another feature...</span>
-                    <p class="mt-2 text-base">
-                        First important reason why tile could be used in a specific way. Or should this be some other
-                        specific example?
-
-                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="bg-gray-50 mt-16">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                <span class="block">Ready to dive in?</span>
-                <span class="block text-sky-600">Start your free trial today.</span>
-            </h2>
-            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-                <div class="inline-flex rounded-md shadow">
-                    <a href="#"
-                       class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sky-600 hover:bg-sky-700">
-                        Get started </a>
-                </div>
-                <div class="ml-3 inline-flex rounded-md shadow">
-                    <a href="#"
-                       class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-sky-600 bg-white hover:bg-sky-50">
-                        Learn more </a>
-                </div>
+
+    <div class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="pb-6 lg:text-center">
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">What makes Tile special?</p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">More than just another realtime
+                    framework, Tile (powered by Datapane) is a
+                    comprehensive SDK for creating flexible data products for your end-users in seconds. </p>
+            </div>
+
+            <div class="mt-10">
+                <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: outline/globe-alt -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                                </svg>
+                            </div>
+                            <p class="ml-16 font-semibold text-lg leading-6 font-medium text-gray-900">Static generation</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">
+                            Tile shuns the idea that any app interaction requires a running backend server. Instead,
+                            Tile render your
+                            app to an HTML bundle which you can share in seconds through email, GitHub pages, or S3.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: outline/scale -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                                </svg>
+                            </div>
+                            <p class="ml-16 font-semibold text-lg leading-6 font-medium text-gray-900">Python API for Javascript
+                                components</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">Say goodbye to writing HTML divs, and choose
+                            from a rich set
+                            of composable, interactive components. DataTables, dropdowns, tabs, and selects are
+                            accessible in a single
+                            line of Python.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: outline/scale -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+                                </svg>
+                            </div>
+                            <p class="ml-16 font-semibold text-lg leading-6 font-medium text-gray-900">Serverless backend
+                                functions</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">Want to add interactive forms and run backend
+                            code? Tile
+                            allows you to magically deploy Python functions and Jupyter Notebooks which you can use
+                            in your apps.
+                        </dd>
+                    </div>
+
+                    <div class="relative">
+                        <dt>
+                            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: outline/annotation -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24"
+                                     stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+                                </svg>
+                            </div>
+                            <p class="ml-16 font-semibold text-lg leading-6 font-medium text-gray-900">Bring Your Own
+                                Environment</p>
+                        </dt>
+                        <dd class="mt-2 ml-16 text-base text-gray-600">Tile's ethos is to fit into where you work.
+                            Use Tile inside
+                            of Spark, Airflow, or Jupyter. Add plots and data from the libraries you love, like
+                            Pandas, Plotly, and
+                            Altair.
+                        </dd>
+                    </div>
+                </dl>
             </div>
         </div>
+    </div>
+
+    <div class="bg-white">
+        <section class="max-w-6xl mx-auto relative py-24 pb-14 px-4 sm:px-6 lg:px-8">
+            <div class="relative">
+                <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Magic up a
+                    data app</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-600">Tile gives you the flexibility
+                    and power to
+                    create reports, dashboards, and apps in seconds. Focus on the analysis, and let Tile do the hard
+                    work.</p>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-xs max-w-7xl pb-24 px-8 mx-auto">
+            <div>
+                <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
+                    app/notebook.ipynb
+                </div>
+
+                <pre><code class="language-python rounded-b h-72">import tile_dev as t
+import snowflake.connector
+from internal_lib import forecast
+
+conn = snowflake.connector.connect(...)
+users = conn.execute_query('get_users.sql').fetchall()
+f_data, f_plot = forecast.predict(df)
+
+sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
+
+t.View(
+t.Plot(sales_v_profit, name='sale_v_profit'),
+t.DataTable(f_data, name='forecast_data'),
+t.Plot(f_plot, name='forecast_plot')
+).save(path='report.html')
+
+</code>
+</pre>
+                <span class="text-xl font-semibold">HTML views let you share insights in seconds.</span>
+                <p class="mt-2 text-base text-gray-600">
+                    Generate rich standalone reports from pandas DataFrames, Python visualizations, and more. All
+                    from the comfort
+                    of your notebook.
+                </p>
+            </div>
+            <div>
+                <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
+                    app/notebook.ipynb
+                </div>
+
+                <pre><code class="language-python rounded-b h-72">import tile_dev as t
+...
+
+t.View(
+t.Group(
+  t.Plot(sales_v_profit, name='sale_v_profit'),
+  t.DataTable(f_data, name='forecast_data'),
+  t.Select(
+    t.DataTable(f_data.head(1000), label='First 1000 rows'),
+    t.DataTable(f_data.tail(1000), label='Last 1000 rows'),
+  ),
+  columns=2
+).save(path='report.html')
+
+</code>
+</pre>
+                <span class="text-xl font-semibold">Components make it easy to create beautiful UIs.</span>
+                <p class="mt-2 text-base text-gray-600">
+                    Create interactive reports with dropdowns, interactive tables, and selects -- without writing a
+                    line of HTML or
+                    CSS.
+                </p>
+            </div>
+            <div>
+                <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
+                    app/notebook.ipynb
+                </div>
+
+                <pre><code class="language-python rounded-b h-72">import tile as t
+
+t.View(
+t.Plot(sales_v_profit, name='sale_v_profit'),
+t.Form(name='end-user-params')
+t.DataTable(f_data, name='forecast_data'),
+t.Plot(f_plot, name='forecast_plot')
+).Backend(
+t.Function(name='end-users-params', path='notebook.ipynb')
+).run_app()
+</code>
+</pre>
+                <span class="text-xl font-semibold">Functions add backend code to your apps.</span>
+                <p class="mt-2 text-base text-gray-600">
+                    Want end-users to dynamically run backend scripts and notebooks? Add functions to your reports
+                    which return
+                    dynamic views.
+                </p>
+            </div>
+            <div>
+                <div class="rounded-t text-center py-1 bg-gray-700 text-gray-200">
+                    app/notebook.ipynb
+                </div>
+
+                <pre><code class="language-python rounded-b h-72">import tile_dev as t
+import snowflake.connector
+from internal_lib import forecast
+
+conn = snowflake.connector.connect(...)
+users = conn.execute_query('get_users.sql').fetchall()
+f_data, f_plot = forecast.predict(df)
+
+sales_v_profit = alt.Chart(users).encode(x='sales', y='profit', color='category')
+
+t.View(
+t.Plot(sales_v_profit, name='sale_v_profit'),
+t.Form(name='foo')
+t.DataTable(f_data, name='forecast_data'),
+t.Plot(f_plot, name='forecast_plot')
+).Backend(
+t.Function(name='foo', path='foo.ipynb')
+).render(deploy=t.Deployment.S3)
+
+</code>
+</pre>
+                <span class="text-xl font-semibold">Another feature...</span>
+                <p class="mt-2 text-base text-gray-600">
+                    First important reason why tile could be used in a specific way. Or should this be some other
+                    specific example?
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-indigo-500">
+      <div class="h-56 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
+        <img class="w-full h-full object-cover" src="../assets/embed.webp" alt="">
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div class="lg:ml-auto lg:w-1/2 lg:pl-10">
+            <h2 class="font-extrabold tracking-tight text-gray-900 pb-8">
+                <span class="block text-white text-3xl">Ready to give it a go?</span>
+                <span class="block text-dark text-2xl">Get started with Tile today.</span>
+            </h2>
+
+            <div class="inline-flex rounded-md shadow">
+                <a href="/docs/getting-started"
+                   class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-indigo-600 bg-white hover:bg-gray-50">
+                    Get started </a>
+            </div>
+        </div>
+      </div>
     </div>
 </div>
 
@@ -533,9 +568,7 @@ t.View(
           
             
               
-                
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -547,17 +580,17 @@ t.View(
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Tile" class="md-nav__button md-logo" aria-label="Tile" data-md-component="logo">
       
-  <img src="/assets/tile.svg" alt="logo">
+  <img src="assets/tile.svg" alt="logo">
 
     </a>
     Tile
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/tile-dev/tile/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/tile-dev/tile" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     tile-dev/tile
@@ -607,14 +640,14 @@ t.View(
       
       
         <label class="md-nav__link" for="__nav_2">
-          Learn
+          Community
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Learn" data-md-level="1">
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Learn
+          Community
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -624,64 +657,8 @@ t.View(
   
   
     <li class="md-nav__item">
-      <a href="learn/what/" class="md-nav__link">
-        What is Tile?
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="learn/mission/" class="md-nav__link">
-        Mission
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="learn/usecases/" class="md-nav__link">
-        Use-cases
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="learn/faq/" class="md-nav__link">
-        FAQ
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="learn/comparisons/" class="md-nav__link">
-        Comparisons
+      <a href="community/" class="md-nav__link">
+        Community
       </a>
     </li>
   
@@ -711,14 +688,14 @@ t.View(
       
       
         <label class="md-nav__link" for="__nav_3">
-          Usage docs
+          About
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Usage docs" data-md-level="1">
+      <nav class="md-nav" aria-label="About" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Usage docs
+          About
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -728,8 +705,78 @@ t.View(
   
   
     <li class="md-nav__item">
-      <a href="usage-docs/getting-started/" class="md-nav__link">
-        Getting Started
+      <a href="about/what/" class="md-nav__link">
+        What is Tile?
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/mission/" class="md-nav__link">
+        Mission
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/usecases/" class="md-nav__link">
+        Use-cases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/faq/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="about/comparisons/" class="md-nav__link">
+        Comparisons
       </a>
     </li>
   
@@ -759,14 +806,14 @@ t.View(
       
       
         <label class="md-nav__link" for="__nav_4">
-          Community
+          Docs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Community" data-md-level="1">
+      <nav class="md-nav" aria-label="Docs" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Community
+          Docs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -776,8 +823,8 @@ t.View(
   
   
     <li class="md-nav__item">
-      <a href="community/" class="md-nav__link">
-        Community
+      <a href="docs/getting-started/" class="md-nav__link">
+        Getting Started
       </a>
     </li>
   
@@ -797,27 +844,88 @@ t.View(
               </div>
             
             
-          
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
               
-            </article>
-          </div>
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
+    <footer class="bg-white text-sm">
+      <div class="max-w-7xl mx-auto pt-12 pb-6 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+          <div class="px-5 py-2">
+            <a href="#" class="text-gray-600 hover:text-gray-900"> Extra footer </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-gray-600 hover:text-gray-900"> Links </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-gray-600 hover:text-gray-900"> Can live </a>
+          </div>
+
+          <div class="px-5 py-2">
+            <a href="#" class="text-gray-600 hover:text-gray-900"> Here </a>
+          </div>
+        </nav>
+        <div class="mt-6 flex justify-center space-x-6">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">GitHub</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+          <p class="mt-8 text-center text-gray-500 text-xs">&copy; <span id="footer_year">2022</span> Tile by <img class="inline w-6 h-6" src="../assets/datapane-icon.png" alt="" style="margin-right: -2px"> <span class="font-bold">Datapane</span>. All rights reserved.</p>
+      </div>
+    </footer>
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-  
-      <script src="assets/javascripts/bundle.467223ff.min.js"></script>
-      
-    
+<script>
+    var today = new Date();
+    var year = today.getFullYear();
+    var footer_year = document.getElementById("footer_year");
+    footer_year.innerHTML = year;
+</script>
 
+    
   </body>
 </html>

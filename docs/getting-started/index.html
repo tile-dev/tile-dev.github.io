@@ -10,8 +10,8 @@
       
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
+      <link rel="icon" href="../../assets/tile.svg">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
@@ -19,12 +19,14 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.975780f9.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
         
       
+      
+
     
     
     
@@ -32,17 +34,18 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CIBM+Plex+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"IBM Plex Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../assets/extra.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
+    
     
     
 
@@ -51,12 +54,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="tailwind" data-md-color-primary="" data-md-color-accent="">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -74,11 +81,13 @@
         <aside class="md-banner">
           <div class="md-banner__inner md-grid md-typeset">
             
+            
   <a href="#" style="color:#eee;">
     Check out our <strong>launch blogpost</strong>!
   </a>
 
           </div>
+          
         </aside>
       
     </div>
@@ -90,11 +99,11 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Tile" class="md-header__button md-logo" aria-label="Tile" data-md-component="logo">
       
-  <img src="/assets/tile.svg" alt="logo">
+  <img src="../../assets/tile.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -113,10 +122,34 @@
       </div>
     </div>
     
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -124,13 +157,13 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -150,10 +183,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/tile-dev/tile/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/tile-dev/tile" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     tile-dev/tile
@@ -196,8 +229,24 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../learn/what/" class="md-tabs__link">
-        Learn
+      <a href="../../community/" class="md-tabs__link">
+        Community
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/what/" class="md-tabs__link">
+        About
       </a>
     </li>
   
@@ -215,23 +264,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        Usage docs
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../community/" class="md-tabs__link">
-        Community
+        Docs
       </a>
     </li>
   
@@ -260,17 +293,17 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Tile" class="md-nav__button md-logo" aria-label="Tile" data-md-component="logo">
       
-  <img src="/assets/tile.svg" alt="logo">
+  <img src="../../assets/tile.svg" alt="logo">
 
     </a>
     Tile
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/tile-dev/tile/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/tile-dev/tile" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
     tile-dev/tile
@@ -312,14 +345,14 @@
       
       
         <label class="md-nav__link" for="__nav_2">
-          Learn
+          Community
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Learn" data-md-level="1">
+      <nav class="md-nav" aria-label="Community" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Learn
+          Community
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -329,7 +362,55 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/what/" class="md-nav__link">
+      <a href="../../community/" class="md-nav__link">
+        Community
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          About
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/what/" class="md-nav__link">
         What is Tile?
       </a>
     </li>
@@ -343,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/mission/" class="md-nav__link">
+      <a href="../../about/mission/" class="md-nav__link">
         Mission
       </a>
     </li>
@@ -357,7 +438,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/usecases/" class="md-nav__link">
+      <a href="../../about/roadmap/" class="md-nav__link">
+        Roadmap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/usecases/" class="md-nav__link">
         Use-cases
       </a>
     </li>
@@ -371,7 +466,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/faq/" class="md-nav__link">
+      <a href="../../about/faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -385,7 +480,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../learn/comparisons/" class="md-nav__link">
+      <a href="../../about/comparisons/" class="md-nav__link">
         Comparisons
       </a>
     </li>
@@ -412,20 +507,20 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3">
-          Usage docs
+        <label class="md-nav__link" for="__nav_4">
+          Docs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Usage docs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+      <nav class="md-nav" aria-label="Docs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Usage docs
+          Docs
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -551,54 +646,6 @@
   
 
     
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Community
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Community" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Community
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../community/" class="md-nav__link">
-        Community
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
   </ul>
 </nav>
                   </div>
@@ -701,35 +748,37 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
-<a href="https://github.com/tile-dev/tile/edit/master/docs/usage-docs/getting-started.md" title="Edit this page" class="md-content__button md-icon">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-</a>
+                  
+
+  <a href="https://github.com/tile-dev/tile/edit/master/docs/docs/getting-started.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
 
 
-
-<h1 id="getting-started">Getting Started</h1>
-<h2 id="installation">Installation</h2>
-<p>Datapane's Python library and CLI can be installed using either <code>conda</code> or <code>pip</code> on macOS, Windows, or Linux. Datapane supports Python <strong>3.6 - 3.9</strong>.</p>
+<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>Tile is powered by the <a href="https://docs.datapane.com/">Datapane</a> library, so you'll need to install this first. Datapane's Python library and CLI can be installed using either <code>conda</code> or <code>pip</code> on macOS, Windows, or Linux. Datapane supports Python <strong>3.6 - 3.9</strong>.</p>
 <div class="admonition installing">
 <p class="admonition-title">Installing</p>
 <p>Instructions for installing Python can be found at <a href="https://wiki.python.org/moin/BeginnersGuide/Download">https://wiki.python.org/moin/BeginnersGuide/Download</a>.&#x20;</p>
 </div>
-<h3 id="conda">conda</h3>
+<h3 id="conda">conda<a class="headerlink" href="#conda" title="Permanent link">&para;</a></h3>
 <p>If you use <code>conda</code>, you can install it with:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Python</label><label for="__tabbed_1_2">Jupyter</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>$ conda install -c conda-forge <span class="s2">&quot;datapane&gt;=0.10.0&quot;</span>
-$ datapane hello-world
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span><span class="s2">&quot;datapane&gt;=0.10.0&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>$<span class="w"> </span>datapane<span class="w"> </span>hello-world
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>!conda install -c conda-forge &quot;datapane&gt;=0.10.0&quot;
-!datapane hello-world
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>!conda install -c conda-forge &quot;datapane&gt;=0.10.0&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>!datapane hello-world
 </code></pre></div>
 </div>
 </div>
@@ -738,75 +787,81 @@ $ datapane hello-world
 <p class="admonition-title">Installing</p>
 <p>Conda sometimes installs an older version of datapane. If you receive errors, please check the version and try running <code>conda update --all</code> or try in a new conda environment (<code>conda create -n ENV</code> and <code>conda activate ENV)</code></p>
 </div>
-<h3 id="pip">pip</h3>
+<h3 id="pip">pip<a class="headerlink" href="#pip" title="Permanent link">&para;</a></h3>
 <p>If you use <code>pip</code>, you can install it with:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Python</label><label for="__tabbed_2_2">Jupyter</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>$ pip3 install -U datapane
-$ datapane hello-world
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>pip3<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>datapane
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>$<span class="w"> </span>datapane<span class="w"> </span>hello-world
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>!pip3 install -U datapane
-!datapane hello-world
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>!pip3 install -U datapane
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>!datapane hello-world
 </code></pre></div>
 </div>
 </div>
 </div>
-<h3 id="upgrading">Upgrading</h3>
+<h3 id="upgrading">Upgrading<a class="headerlink" href="#upgrading" title="Permanent link">&para;</a></h3>
 <p>We upgrade datapane regularly to include new features, both in the client and on the hosted version. From time to time your client may no longer be compatible with the datapane server when uploading a report. If this happens, you will receive an error like the following:&#x20;</p>
-<div class="highlight"><pre><span></span><code>IncompatibleVersionError: Your client is out-of-date (version 0.9.2) and may be causing errors, &quot;
-please upgrade to version 0.10.2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>IncompatibleVersionError: Your client is out-of-date (version 0.9.2) and may be causing errors, &quot;
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>please upgrade to version 0.10.2
 </code></pre></div>
 <p>In such an event, please upgrade your datapane cli via <code>pip</code> or <code>conda</code> and try again.</p>
 <p><strong>Upgrading via pip</strong></p>
 <p>If you installed datapane via pip, run the following command:</p>
-<div class="highlight"><pre><span></span><code>$ pip install -U datapane
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>$ pip install -U datapane
 </code></pre></div>
 <p><strong>Upgrading via conda</strong></p>
 <p>If you installed <code>datapane</code> via conda, run the following command, adding the <code>--all</code> flag if needed. As above, if you receive errors please try using a fresh conda environment.</p>
-<div class="highlight"><pre><span></span><code>$ conda update datapane OR conda update --all
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>$ conda update datapane OR conda update --all
 </code></pre></div>
-<h3 id="windows-tips-and-troubleshooting">Windows Tips and Troubleshooting</h3>
+<h3 id="windows-tips-and-troubleshooting">Windows Tips and Troubleshooting<a class="headerlink" href="#windows-tips-and-troubleshooting" title="Permanent link">&para;</a></h3>
 <p>We generally recommend installing via <code>conda</code> over <code>pip</code> on Windows as it's easier to install all the required dependencies.</p>
 <p>If you need to install Python first, the latest versions of Windows 10 can install Python for you automatically - running <code>python</code> from the command-prompt will take you to the Windows Store where you can download an <a href="https://docs.python.org/3/using/windows.html#the-microsoft-store-package">official version</a>. We also strongly recommend using a 64-bit rather than the 32-bit version of Python, you can check this by running the command <code>python -c "import struct; print(struct.calcsize('P')*8, 'bit')"</code> from the Command Prompt.</p>
-<div class="highlight"><pre><span></span><code>$ python -c &quot;import struct; print(struct.calcsize(&#39;P&#39;)*8, &#39;bit&#39;)&quot;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>$ python -c &quot;import struct; print(struct.calcsize(&#39;P&#39;)*8, &#39;bit&#39;)&quot;
 </code></pre></div>
 <p>Also note that on Windows, you can run the <code>datapane</code> command either by running <code>datapane</code> or <code>datapane.exe</code> on the command-line.</p>
 <p>Some specific issues you may encounter on Windows include:</p>
-<h4 id="import-errors-when-runningimporting-datapane">Import errors when running/importing datapane</h4>
+<h4 id="import-errors-when-runningimporting-datapane">Import errors when running/importing datapane<a class="headerlink" href="#import-errors-when-runningimporting-datapane" title="Permanent link">&para;</a></h4>
 <p>You may encounter errors such as <code>ImportError: DLL load failed</code> when running datapane or importing it within your Python code.</p>
 <p>If so, try installing the <a href="https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads">Visual C++ Redistributables for Windows</a> from Microsoft and running again (you most likely want to download the version for x64, i.e. <code>vc_redist.x64.exe</code>)</p>
-<h4 id="datapane-install-errors-trying-to-compile-pyarrow-using-visual-c">Datapane install errors trying to compile <code>pyarrow</code> using Visual C++</h4>
+<h4 id="datapane-install-errors-trying-to-compile-pyarrow-using-visual-c">Datapane install errors trying to compile <code>pyarrow</code> using Visual C++<a class="headerlink" href="#datapane-install-errors-trying-to-compile-pyarrow-using-visual-c" title="Permanent link">&para;</a></h4>
 <p>This usually occurs when you are running a 32-bit version of Python and installing via <code>pip</code>. Either try using <code>conda</code> or install a 64-bit version of Python (for example from the Windows Store as mentioned above).</p>
 <p>This may also occur when using Windows 7 - we only support directly Windows 10, however, it may be worth trying to install via <code>conda</code> instead, if you are stuck on Windows 7.</p>
-<h4 id="datapaneexe-is-not-recognized-as-an-internal-or-external-command"><code>'datapane.exe' is not recognized as an internal or external command</code></h4>
+<h4 id="datapaneexe-is-not-recognized-as-an-internal-or-external-command"><code>'datapane.exe' is not recognized as an internal or external command</code><a class="headerlink" href="#datapaneexe-is-not-recognized-as-an-internal-or-external-command" title="Permanent link">&para;</a></h4>
 <p>This occurs when your Windows <code>%PATH%</code> doesn't include all the Python directories, specifically the <code>Scripts</code> directory.</p>
 <p>You may notice during the datapane install messages such as (or similar to):</p>
-<div class="highlight"><pre><span></span><code>The script datapane.exe is installed in &#39;C:\users\&lt;USERNAME&gt;\appdata\local\programs\python\python37\Scripts&#39; which is not on PATH.
-Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>The script datapane.exe is installed in &#39;C:\users\&lt;USERNAME&gt;\appdata\local\programs\python\python37\Scripts&#39; which is not on PATH.
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 </code></pre></div>
 <p>To fix this, adjust your <code>%PATH%</code> to include your specific <code>Scripts</code> path as mentioned in the <code>pip</code> warning (see <a href="https://github.com/datapane/datapane-docs/tree/5f551e8c5b2748f0785683bbd62cb59f1dfe46ca/tutorials/here/README.md">https://datatofish.com/add-python-to-windows-path/</a> for more detailed instructions). Alternatively, you can try running the datapane client directly, using the command <code>python3.exe -m datapane.client</code> instead.</p>
-<p>{% hint style="info" %}
-If you are still having problems installing, please ask on the <a href="https://discuss.datapane.com">Datapane Forum</a>, and someone will come to help you.
-{% endhint %}</p>
+<p _="%" endhint="endhint">{% hint style="info" %}
+If you are still having problems installing, please ask on the <a href="https://discuss.datapane.com">Datapane Forum</a>, and someone will come to help you.</p>
 
-              
-            </article>
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../../learn/comparisons/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Comparisons" rel="prev">
+        <a href="../../about/comparisons/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Comparisons" rel="prev">
           <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
@@ -819,26 +874,15 @@ If you are still having problems installing, please ask on the <a href="https://
         </a>
       
       
-        
-        <a href="../../community/" class="md-footer__link md-footer__link--next" aria-label="Next: Community" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Community
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
     </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 Tile by Datapane. All rights reserved.
+    </div>
   
   
     Made with
@@ -856,13 +900,15 @@ If you are still having problems installing, please ask on the <a href="https://
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
   
-      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
       
     
 
+    
   </body>
 </html>
