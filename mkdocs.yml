@@ -4,23 +4,28 @@ repo_url: https://github.com/tile-dev/tile
 repo_name: tile-dev/tile
 copyright: Copyright &copy; 2023 Tile by Datapane. All rights reserved.
 
-
-
-
 nav:
   - Home: index.md
-  - Dev API:
-    - Getting Started : api/getting-started.md
+  - About: lorem.md
+  - Architecture: lorem.md  # put in Home / About?
+  - Package Templates: lorem.md
+  - Solutions: lorem.md  # i.e. use-cases
+  - Features: lorem.md
+  - Developer Docs:
+    - Overview: lorem.md
+    - Requirements: lorem.md
+    - Configuration: lorem.md
+    - Deployment: lorem.md
+  # Old shit
   - OLD-Home: old_index.md
   # - Community: community.md
   - OLD-About:
-    - What is Tile? : old_about/what.md
-    - Mission : old_about/mission.md
-    - Roadmap : old_about/roadmap.md
+    - What is Tile?: old_about/what.md
+    - Mission: old_about/mission.md
+    - Roadmap: old_about/roadmap.md
     - Use-cases: old_about/usecases.md
     - FAQ: old_about/faq.md
     - Comparisons: old_about/comparisons.md
-
 
 theme:
   name: material
@@ -45,7 +50,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue grey
-      accent: amber
+      accent: blue
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -53,7 +58,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
-      accent: amber
+      accent: blue
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
