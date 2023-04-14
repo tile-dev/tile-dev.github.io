@@ -6,7 +6,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/community/</loc>
+         <loc>https://tile.dev/architecture/</loc>
          <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -21,7 +21,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/dev/getting-started/</loc>
+         <loc>https://tile.dev/dev/overview/</loc>
          <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>

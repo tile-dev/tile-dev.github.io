@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://tile.dev/community/">
+        <link rel="canonical" href="https://tile.dev/architecture/">
       
       <link rel="icon" href="../assets/tile.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Community - Tile</title>
+        <title>Architecture - Tile</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#github" class="md-skip">
+        <a href="#components" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Community
+              Architecture
             
           </span>
         </div>
@@ -206,22 +206,12 @@
         
   
   
-
-
-  <li class="md-tabs__item">
-    <a href="../lorem/" class="md-tabs__link">
-      About
-    </a>
-  </li>
-
-      
-        
-  
+    
   
 
 
   <li class="md-tabs__item">
-    <a href="../lorem/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Architecture
     </a>
   </li>
@@ -256,23 +246,11 @@
   
 
 
-  <li class="md-tabs__item">
-    <a href="../lorem/" class="md-tabs__link">
-      Features
-    </a>
-  </li>
-
-      
-        
-  
-  
-
-
   
   
   
     <li class="md-tabs__item">
-      <a href="../lorem/" class="md-tabs__link">
+      <a href="../dev/overview/" class="md-tabs__link">
         Developer Docs
       </a>
     </li>
@@ -324,7 +302,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -377,26 +357,184 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../lorem/" class="md-nav__link">
-        About
-      </a>
-    </li>
-  
-
     
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
       
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lorem/" class="md-nav__link">
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Architecture
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Architecture
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analytics-code" class="md-nav__link">
+    Analytics Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Analytics Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reportings-and-dashboarding" class="md-nav__link">
+    Reportings and Dashboarding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapane-components" class="md-nav__link">
+    Datapane Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapane-tasks" class="md-nav__link">
+    Datapane Tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-databases" class="md-nav__link">
+    App Databases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elt" class="md-nav__link">
+    ELT
+  </a>
+  
+    <nav class="md-nav" aria-label="ELT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orchestration" class="md-nav__link">
+    Orchestration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformations" class="md-nav__link">
+    Transformations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connections" class="md-nav__link">
+    Connections
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#olap-database" class="md-nav__link">
+    OLAP Database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-output" class="md-nav__link">
+    Input / Output
+  </a>
+  
+    <nav class="md-nav" aria-label="Input / Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    Integrations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#management" class="md-nav__link">
+    Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    User Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -438,26 +576,11 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../lorem/" class="md-nav__link">
-        Features
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -472,13 +595,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_7">
+        <label class="md-nav__link" for="__nav_5">
           Developer Docs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Developer Docs" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Developer Docs
         </label>
@@ -490,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../lorem/" class="md-nav__link">
+      <a href="../dev/overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -572,7 +695,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
@@ -591,13 +714,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_9">
+        <label class="md-nav__link" for="__nav_7">
           OLD-About
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="OLD-About" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           OLD-About
         </label>
@@ -701,6 +824,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -718,23 +843,145 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#github" class="md-nav__link">
-    GitHub
+  <a href="#components" class="md-nav__link">
+    Components
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#forums" class="md-nav__link">
-    Forums
+  <a href="#analytics-code" class="md-nav__link">
+    Analytics Code
   </a>
+  
+    <nav class="md-nav" aria-label="Analytics Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reportings-and-dashboarding" class="md-nav__link">
+    Reportings and Dashboarding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapane-components" class="md-nav__link">
+    Datapane Components
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datapane-tasks" class="md-nav__link">
+    Datapane Tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-databases" class="md-nav__link">
+    App Databases
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#twitter" class="md-nav__link">
-    Twitter
+  <a href="#elt" class="md-nav__link">
+    ELT
   </a>
+  
+    <nav class="md-nav" aria-label="ELT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orchestration" class="md-nav__link">
+    Orchestration
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#transformations" class="md-nav__link">
+    Transformations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connections" class="md-nav__link">
+    Connections
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#olap-database" class="md-nav__link">
+    OLAP Database
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#input-output" class="md-nav__link">
+    Input / Output
+  </a>
+  
+    <nav class="md-nav" aria-label="Input / Output">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrations" class="md-nav__link">
+    Integrations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#management" class="md-nav__link">
+    Management
+  </a>
+  
+    <nav class="md-nav" aria-label="Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    User Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -752,22 +999,60 @@
                 
                   
 
-  <a href="https://github.com/tile-dev/tile/edit/master/docs/community.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/tile-dev/tile/edit/master/docs/architecture.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Community</h1>
+  <h1>Architecture</h1>
 
-<h3 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
-<p>Our centre of gravity is our GitHub where we build in the open. Come and get involved!</p>
-<h3 id="forums">Forums<a class="headerlink" href="#forums" title="Permanent link">&para;</a></h3>
-<p>We host the Data Developer forum for all things to do with building data apps and frontends. Come and say hi!</p>
-<h3 id="twitter">Twitter<a class="headerlink" href="#twitter" title="Permanent link">&para;</a></h3>
-<p>For updates, make sure to follow the Tile project on Twitter.</p>
+<p>Tile is architected to provide all the features you need to build robust and production-ready Data Projects, essentially a <em>Data SDK in a box</em>.</p>
+<p>Tile is built from multiple components that have been selected to work well together - we build on top of great open-source tools in the Python ecosystem, connecting them together and providing a integrated way to make use of them all.</p>
+<figure>
+<p><img alt="Tile Architecture" loading="lazy" src="../assets/Tile-Architecture.png" />
+  </p>
+<figcaption>Tile Project Architecture</figcaption>
+</figure>
+<h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
+<p>Tile is split up into multiple sections comprised of several components - below we'll list a few of them and how they help you build Data Products.</p>
+<h2 id="analytics-code">Analytics Code<a class="headerlink" href="#analytics-code" title="Permanent link">&para;</a></h2>
+<p>Tile uses the Datapane Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.</p>
+<p>You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, Matplotlib,and more, and it works direct from Jupyter.</p>
+<h3 id="reportings-and-dashboarding">Reportings and Dashboarding<a class="headerlink" href="#reportings-and-dashboarding" title="Permanent link">&para;</a></h3>
+<p>Datapane provides data reporting and dashboard functionality, which allows users to create visually engaging reports and interactive dashboards. This helps you communicate insights effectively and enables stakeholders to make data-driven decisions. By providing clear visualizations and a user-friendly interface, developers can easily share their findings and monitor key performance indicators within their applications.</p>
+<h3 id="datapane-components">Datapane Components<a class="headerlink" href="#datapane-components" title="Permanent link">&para;</a></h3>
+<p>Datapane provides a suite of Python-based components and functions designed to perform live data analysis. Create and reuse components that allow you to process and analyze data in real-time, enabling them to uncover insights and make data-driven decisions quickly. By providing a Python-centric approach, your code can benefit from the language's extensive libraries and familiar syntax while building responsive, high-performance data-driven applications.</p>
+<h3 id="datapane-tasks">Datapane Tasks<a class="headerlink" href="#datapane-tasks" title="Permanent link">&para;</a></h3>
+<p>Our open-source Python project includes features for managing background and scheduled tasks, which automate updates of datasets and the execution of analytics code. These capabilities allow developers to set up routine data refreshes and run analysis tasks without manual intervention, ensuring timely insights and efficient resource usage. By automating these processes, users can concentrate on exploring data and developing valuable applications, while the system effectively handles the underlying tasks.</p>
+<h3 id="app-databases">App Databases<a class="headerlink" href="#app-databases" title="Permanent link">&para;</a></h3>
+<p>Your Data Products may need to store application-specific data that is independent of your analytics data, such as user preferences, for instance.</p>
+<p>To support this, Tile provides multiple persistance options for your Data Applications, including Document Databases )like Mongo DB), persistent caches, and Blob Storage (such as S3). These can be updated automatically, or as part of scheduled tasks, for instance to update a trained model out-of-band for use within a Data Product.</p>
+<h2 id="elt">ELT<a class="headerlink" href="#elt" title="Permanent link">&para;</a></h2>
+<p>Our ELT functionality empowers users to efficiently extract data from a wide array of sources, including databases, APIs, and file formats, ensuring seamless integration with virtually any data source. Once the data is extracted, it is loaded the projects OLAP DBfor further transformation, allowing for tailored manipulation and analysis. By simplifying and automating the data ingestion process, Tile saves valuable time and resources, enabling developers and data scientists to focus on building applications and uncovering insights from their data. </p>
+<h3 id="orchestration">Orchestration<a class="headerlink" href="#orchestration" title="Permanent link">&para;</a></h3>
+<p>Easily build, run, and orchestrate data pipelines - allowing you to efficiently manage, schedule, and monitor multiple data processing tasks, ensuring that dependencies are met and errors are handled gracefully. By automating and centralizing pipeline management, Tile projects eliminates manual intervention, reduces operational overhead, and accelerates your path to insights. </p>
+<h3 id="transformations">Transformations<a class="headerlink" href="#transformations" title="Permanent link">&para;</a></h3>
+<p>Leverage the versatility of SQL and Python data transformations in our open-source Python project, enabling users to harness the power of familiar query languages and scripting. This feature allows for seamless manipulation and cleaning of data, catering to a wide range of analytical requirements. Benefit from the flexibility of both SQL and Python, and supercharge your data-driven applications with efficient, adaptable data transformations.</p>
+<h3 id="connections">Connections<a class="headerlink" href="#connections" title="Permanent link">&para;</a></h3>
+<p>Experience seamless data connections with our open-source Python project, offering built-in support for Singer Taps and Meltano integrations. Effortlessly connect to numerous data sources and enjoy streamlined data extraction, ensuring compatibility and adaptability for your data-driven applications. Capitalize on the convenience of reliable data connections and elevate your data workflows with our versatile integration options.</p>
+<h3 id="olap-database">OLAP Database<a class="headerlink" href="#olap-database" title="Permanent link">&para;</a></h3>
+<p>We use DuckDB as our OLAP (Online Analytical Processing) databases for Tile to enhance your data analysis capabilities. DuckDB provides efficient, multidimensional data analysis, making it easier to explore and manipulate large datasets in real-time. By integrating DuckDB, you can easily use both SQL and Python to rapidly work with large datasets, transform them and persist them trivially within your applications.</p>
+<h2 id="input-output">Input / Output<a class="headerlink" href="#input-output" title="Permanent link">&para;</a></h2>
+<h3 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Permanent link">&para;</a></h3>
+<p>Tile offers support for popular communication channels like Slack, Teams, and Email. Use notifications to help users stay informed about the progress and status of their data-driven applications, as well as send timely alerts for critical events or errors. By integrating these notification options, developers can ensure effective communication, improved collaboration, and prompt issue resolution within their teams.</p>
+<h3 id="integrations">Integrations<a class="headerlink" href="#integrations" title="Permanent link">&para;</a></h3>
+<p>Tile comes with integrations built-in to work with external products, such as SaaS APIs, via webhooks. Python tasks can be scheduled to run in the background to perform batch processing.</p>
+<p>We also provide integrations into multiple LLMs via LangChain enabling the automated analysis of data.</p>
+<h2 id="management">Management<a class="headerlink" href="#management" title="Permanent link">&para;</a></h2>
+<h3 id="user-management">User Management<a class="headerlink" href="#user-management" title="Permanent link">&para;</a></h3>
+<p>Tile comes with user management out of the box, so you can efficiently handle permissions, Role-Based Access Control (RBAC), and SAML-based single sign-on. This functionality allows you to define and manage access levels for different users, ensuring data security and compliance within your application. By providing granular control over user access, developers can build Data Projects effectively while safeguarding sensitive information and maintaining a secure environment.</p>
+<h3 id="admin">Admin<a class="headerlink" href="#admin" title="Permanent link">&para;</a></h3>
+<p>Tile provide essential tools for logging, monitoring, deployment, and versioning. These capabilities enable developers to maintain robust applications by tracking system activity, monitoring performance, managing deployments, and handling version control. By offering comprehensive administrative support, Tile ensures that users can effectively manage their applications, optimize performance, and maintain a transparent development process.</p>
 
 
+
+  
 
 
 
@@ -786,6 +1071,44 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../lorem/" class="md-footer__link md-footer__link--next" aria-label="Next: Package Templates" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Package Templates
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
