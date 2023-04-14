@@ -6,13 +6,11 @@ copyright: Copyright &copy; 2023 Tile by Datapane. All rights reserved.
 
 nav:
   - Home: index.md
-  - About: lorem.md
-  - Architecture: lorem.md  # put in Home / About?
+  - Architecture: architecture.md  # and features
   - Package Templates: lorem.md
   - Solutions: lorem.md  # i.e. use-cases
-  - Features: lorem.md
   - Developer Docs:
-    - Overview: lorem.md
+    - Overview: dev/overview.md
     - Requirements: lorem.md
     - Configuration: lorem.md
     - Deployment: lorem.md
