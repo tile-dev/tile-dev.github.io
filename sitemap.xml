@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tile.dev/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/community/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/lorem/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_index/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/api/getting-started/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <loc>https://tile.dev/dev/getting-started/</loc>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/comparisons/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/faq/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/mission/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/roadmap/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/usecases/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/what/</loc>
-         <lastmod>2023-04-13</lastmod>
+         <lastmod>2023-04-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
