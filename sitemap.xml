@@ -11,16 +11,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/lorem/</loc>
-         <lastmod>2023-04-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://tile.dev/old_index/</loc>
-         <lastmod>2023-04-16</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://tile.dev/philosophy/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
@@ -56,32 +46,37 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/comparisons/</loc>
+         <loc>https://tile.dev/old/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/faq/</loc>
+         <loc>https://tile.dev/old/about/comparisons/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/mission/</loc>
+         <loc>https://tile.dev/old/about/faq/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/roadmap/</loc>
+         <loc>https://tile.dev/old/about/mission/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/usecases/</loc>
+         <loc>https://tile.dev/old/about/roadmap/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/old_about/what/</loc>
+         <loc>https://tile.dev/old/about/usecases/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/old/about/what/</loc>
          <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>

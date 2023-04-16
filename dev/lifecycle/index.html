@@ -502,8 +502,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#buliding" class="md-nav__link">
-    Buliding
+  <a href="#building" class="md-nav__link">
+    Building
   </a>
   
 </li>
@@ -609,8 +609,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#buliding" class="md-nav__link">
-    Buliding
+  <a href="#building" class="md-nav__link">
+    Building
   </a>
   
 </li>
@@ -676,7 +676,7 @@
 
   <h1>Lifecycle</h1>
 
-<p>Tile projects has a common structure and lifecycle that drastically simlplficies building and maintaining Tile Data Products. In this section we'll go thourgh these steps:</p>
+<p>Tile projects has a common structure and lifecycle that drastically simplifies building and maintaining Tile Data Products. In this section we'll go through these steps:</p>
 <pre class="mermaid"><code>flowchart LR
     A[Code] --&gt; |Commit| A
     A --&gt; |Push| B[GitHub]
@@ -686,18 +686,18 @@
 <h2 id="code-development">Code Development<a class="headerlink" href="#code-development" title="Permanent link">&para;</a></h2>
 <p>As described <a href="../projects/">previously</a>, it's easy to configure and build your Tile project.</p>
 <p>You can test most of your project locally during development, including using Datapanes inline Jupyter support.</p>
-<p>We recommend you build most of your Python code as functoins, taht you can easily mock and test during development to check that they are working as intended.</p>
+<p>We recommend you build most of your Python code as functions, that you can easily mock and test during development to check that they are working as intended.</p>
 <p>Tile also supports building a mock version of your system for running locally via Docker, so you can test how your product operates as a whole when working with it locally. To do this, simply run,</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$<span class="w"> </span>tile<span class="w"> </span>debug
 </code></pre></div>
 <h2 id="building-and-deployment">Building and Deployment<a class="headerlink" href="#building-and-deployment" title="Permanent link">&para;</a></h2>
 <h3 id="server-configuration">Server Configuration<a class="headerlink" href="#server-configuration" title="Permanent link">&para;</a></h3>
-<p>To deploy your project, you first need to configure your Tile Server, this can be done by running the follwing from the commandline</p>
+<p>To deploy your project, you first need to configure your Tile Server, this can be done by running the following from the command-line</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>$<span class="w"> </span>tile<span class="w"> </span>setup<span class="w"> </span>--server<span class="w"> </span><span class="si">${</span><span class="nv">SERVER</span><span class="si">}</span><span class="w"> </span>--token<span class="w"> </span><span class="o">{</span><span class="nv">$TOKEN</span><span class="o">}</span>
 </code></pre></div>
 <p>where <code>$SERVER</code> and <code>$TOKEN</code> are values taking from the Tile Server management console.</p>
-<h3 id="buliding">Buliding<a class="headerlink" href="#buliding" title="Permanent link">&para;</a></h3>
-<p>Tile projects are built as a collection of networked and codependent container images that represent your entire project, from the Application code, to tasks, and ELT pipelines. The resuling images are pushed to Tile Server which runs them via our customeosied and robust continuer runtime system.</p>
+<h3 id="building">Building<a class="headerlink" href="#building" title="Permanent link">&para;</a></h3>
+<p>Tile projects are built as a collection of networked and codependent container images that represent your entire project, from the Application code, to tasks, and ELT pipelines. The resulting images are pushed to Tile Server which runs them via our customised and robust continuer runtime system.</p>
 <h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
 <p>To deploy your tile project, you can run the following from your project directory</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>$<span class="w"> </span>tile<span class="w"> </span>deploy<span class="w"> </span><span class="o">[</span>--config<span class="w"> </span>config.py<span class="o">]</span>
@@ -708,15 +708,15 @@
 <p>Deployment requires Docker to be installed, even on Windows and Mac. We generally recommend using the GitOps flow instead to reduce requirements and enable a collaborative workflow</p>
 </div>
 <h3 id="version-control-and-ci">Version Control and CI<a class="headerlink" href="#version-control-and-ci" title="Permanent link">&para;</a></h3>
-<p>Tile used a <em>GitOps</em> workflow, where every Tile Project is intended to be commited and versioned via <code>git</code>.</p>
-<p>Upon pushing your changes upstream, we recommend setting up a CI flow, for instance via GitHub Actions, that automate testing your proejct and deploying it automatically. We have built a pre-ready GitHub Action that you can use directly within your pipelines to ease this process.</p>
-<p>You can configure the pipeline to deploy upon your own requirements, for isntance upon a git tag or when pushing to a specific branch. The commit hash is used as a unique version of your tile project that is used to version it upon deployment.</p>
-<p>The advantage of a GitOps flow is that you have a reproducible, audited and collaboroitate process to handle Tile deployments that is independent of your local developer environment.</p>
+<p>Tile used a <em>GitOps</em> workflow, where every Tile Project is intended to be committed and versioned via <code>git</code>.</p>
+<p>Upon pushing your changes upstream, we recommend setting up a CI flow, for instance via GitHub Actions, that automate testing your project and deploying it automatically. We have built a pre-ready GitHub Action that you can use directly within your pipelines to ease this process.</p>
+<p>You can configure the pipeline to deploy upon your own requirements, for instance upon a git tag or when pushing to a specific branch. The commit hash is used as a unique version of your tile project that is used to version it upon deployment.</p>
+<p>The advantage of a GitOps flow is that you have a reproducible, audited and collaborative process to handle Tile deployments that is independent of your local developer environment.</p>
 <h2 id="updates">Updates<a class="headerlink" href="#updates" title="Permanent link">&para;</a></h2>
-<p>When using a Git-based flow, updating your tile project becomes very easy. Simplly make your changes, commit and push to your upstream repo, triggering your automated deployment as needed.</p>
-<p>This results in a new version of the produjct being dbuilt and deplyoed to your Tile Server.</p>
+<p>When using a Git-based flow, updating your tile project becomes very easy. Simply make your changes, commit and push to your upstream repo, triggering your automated deployment as needed.</p>
+<p>This results in a new version of the product being built and deployed to your Tile Server.</p>
 <h3 id="migrations">Migrations<a class="headerlink" href="#migrations" title="Permanent link">&para;</a></h3>
-<p>As part of updating your code, you may need to run migration scripts to ensure that preivously stgored data is updated to work with the new analytics code.</p>
+<p>As part of updating your code, you may need to run migration scripts to ensure that previously stored data is updated to work with the new analytics code.</p>
 <p>Tile supports migrations that can be run as part of a new deployment - these can be specified within the <code>config.py</code> and are run by the Server as needed.</p>
 
 
