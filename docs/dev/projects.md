@@ -108,9 +108,9 @@ You can write all your your Data Applciation code and tasks using [Datapane](htt
 
 Tile also builds upon several other components that you can use from your Python code, you can find their documentation on their specific pages, including
 
-- [DuckDB](https://duckdb.org/docs/)
-- [Meltano Connectors](https://hub.meltano.com/)
-- [Luigi](https://luigi.readthedocs.io/)
+- [DuckDB](https://duckdb.org/docs/){target=_blank}
+- [Meltano Connectors](https://hub.meltano.com/){target=_blank}
+- [Luigi](https://luigi.readthedocs.io/){target=_blank}
 
 Tile projects can be developed locally or using remote development platforms such as GitHub Codespaces, in addition we support all Notebook environments, including JupyterLab, VSCode Notebooks, and more.
 
