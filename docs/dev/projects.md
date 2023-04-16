@@ -1,5 +1,5 @@
 Developing a [Tile project](../architecture.md) is super simple, and there are several [reference projects and templates](../templates.md) freely available on GitHub that you can use to get started with. 
-By default a Tile rpoject includes everything neededs to build, run, and deploy an internal Data Project.
+By default a Tile project includes everything needed to build, run, and deploy an internal Data Project.
 
 
 ## Workflow
@@ -19,7 +19,7 @@ flowchart LR
 
 ## Configuration
 
-Tile opts for convention over configuration, and projects can be easily deifned and follow sensible defaults.
+Tile opts for convention over configuration, and projects can be easily defined and follow sensible defaults.
 
 Tile projects are defined within a directory and are configured via two complementary methods,
 - The filesystem layout
@@ -29,7 +29,7 @@ Each directory represents a tile project, that we recommend forms it's own git r
 
 ### Directory Layout
 
-Tile projects follow a known filesystem layout, to makejumping between projects much simpler. The layout below describees that basic layout of a Tile Project, inclufing the configuration and all python code and data used for the solution.
+Tile projects follow a known filesystem layout, to make jumping between projects much simpler. The layout below describes that basic layout of a Tile Project, including the configuration and all python code and data used for the solution.
 
 ```bash
 my-tile-project/
@@ -58,7 +58,7 @@ Tile projects are configured via a single Python script called `config.py`.
 
 We use python even for configuration, over formats like `yaml`, as we cna make use of standard Python constructs to make the configuration more readable.
 
-The Tile configuration is a single Python object that describes the Tile Project, this is comprised from multiple contianing obejcts that descibes how each subssytem works.
+The Tile configuration is a single Python object that describes the Tile Project, this is comprised from multiple containing objects that describes how each subsystem works.
 
 An example `config.py` is as below:
 
@@ -102,9 +102,9 @@ def first_run():
 
 ## Project Development
 
-You can develop your Tile project using all of the included compoentnw - we provide Python-based interfaces and wrappers around all of them for easy use within your code.
+You can develop your Tile project using all of the included components - we provide Python-based interfaces and wrappers around all of them for easy use within your code.
 
-You can write all your your Data Applciation code and tasks using [Datapane](https://github.com/datapane/datapane)'s View framework - Tile will look for a Datapane Application within `app.py` and use it (Datapane also has great notebook support so will also look for notebooks called `app.ipynb`). You can find more from the [Datapane Application docs](https://docs.datapane.com).
+You can write all your your Data Application code and tasks using [Datapane](https://github.com/datapane/datapane)'s View framework - Tile will look for a Datapane Application within `app.py` and use it (Datapane also has great notebook support so will also look for notebooks called `app.ipynb`). You can find more from the [Datapane Application docs](https://docs.datapane.com).
 
 Tile also builds upon several other components that you can use from your Python code, you can find their documentation on their specific pages, including
 
@@ -118,6 +118,6 @@ Tile projects can be developed locally or using remote development platforms suc
 
 ## Deployment
 
-Tile projects can be easily deployed to a Tile server, either directlly from the project file, or via a CI-based mechasinm such as GitHub Actions. We generally recommend the latter approach when building more robust systems however the former is useful when first getting started.
+Tile projects can be easily deployed to a Tile server, either directly from the project file, or via a CI-based mechanism such as GitHub Actions. We generally recommend the latter approach when building more robust systems however the former is useful when first getting started.
 
 Deployment is part of the Tile Project lifecycle covered in the [next section](./lifecycle.md).
