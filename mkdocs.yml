@@ -6,24 +6,15 @@ copyright: Copyright &copy; 2023 Tile by Datapane. All rights reserved.
 
 nav:
   - Home: index.md
+  - Philosophy: philosophy.md
   - Architecture: architecture.md  # and features
-  - Package Templates: lorem.md
-  - Solutions: lorem.md  # i.e. use-cases
+  - Package Templates: templates.md
+  #- Solutions: solutions.md  # i.e. use-cases
   - Developer Docs:
-    - Overview: dev/overview.md
-    - Requirements: lorem.md
-    - Configuration: lorem.md
-    - Deployment: lorem.md
-  # Old shit
-  - OLD-Home: old_index.md
-  # - Community: community.md
-  - OLD-About:
-    - What is Tile?: old_about/what.md
-    - Mission: old_about/mission.md
-    - Roadmap: old_about/roadmap.md
-    - Use-cases: old_about/usecases.md
-    - FAQ: old_about/faq.md
-    - Comparisons: old_about/comparisons.md
+    - dev/index.md
+    - Tile Server: dev/server.md
+    - Tile Projects: dev/projects.md
+    - Lifecycle: dev/lifecycle.md
 
 theme:
   name: material
@@ -79,7 +70,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - toc:

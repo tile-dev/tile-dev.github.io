@@ -1,5 +1,4 @@
 ---
-#title: Tile Architecture
 hide:
   - navigation
 ---
