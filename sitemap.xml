@@ -2,57 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tile.dev/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/architecture/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/lorem/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_index/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://tile.dev/dev/overview/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <loc>https://tile.dev/philosophy/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/solutions/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/templates/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/dev/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/dev/lifecycle/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/dev/projects/</loc>
+         <lastmod>2023-04-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://tile.dev/dev/server/</loc>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/comparisons/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/faq/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/mission/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/roadmap/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/usecases/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://tile.dev/old_about/what/</loc>
-         <lastmod>2023-04-14</lastmod>
+         <lastmod>2023-04-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
