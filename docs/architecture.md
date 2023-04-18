@@ -18,9 +18,9 @@ Tile is split up into multiple sections comprised of several components - below 
 
 ## Analytics Code
 
-Tile uses the Datapane Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.
+Tile uses the popular [Datapane](https://github.com/datapane/datapane) Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.
 
-You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, Matplotlib,and more, and it works direct from Jupyter.
+You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, and Matplotlib, and it works direct from Jupyter.
 
 ### Reportings and Dashboarding
 
@@ -36,43 +36,41 @@ Our open-source Python project includes features for managing background and sch
 
 ### App Databases
 
-Your Data Products may need to store application-specific data that is independent of your analytics data, such as user preferences, for instance.
+Your Data Products may need to store application-specific data independent of your analytics data, such as user preferences.
 
-To support this, Tile provides multiple persistance options for your Data Applications, including Document Databases )like Mongo DB), persistent caches, and Blob Storage (such as S3). These can be updated automatically, or as part of scheduled tasks, for instance to update a trained model out-of-band for use within a Data Product.
+Tile provides multiple persistance options for your Data Applications, including Document Databases (like Mongo DB), persistent caches, and Blob Storage (such as S3). These can be updated automatically, or as part of scheduled tasks, for instance, to update a trained model out-of-band for use within a Data Product.
 
 ## ELT
 
-Our ELT functionality empowers users to efficiently extract data from a wide array of sources, including databases, APIs, and file formats, ensuring seamless integration with virtually any data source. Once the data is extracted, it is loaded the projects OLAP DBfor further transformation, allowing for tailored manipulation and analysis. By simplifying and automating the data ingestion process, Tile saves valuable time and resources, enabling developers and data scientists to focus on building applications and uncovering insights from their data. 
-
+Our ELT functionality empowers users to efficiently extract data from a wide array of sources, including databases, APIs, and file formats, ensuring seamless integration with virtually any data source. Once the data is extracted, it is loaded the projects OLAP DB for further transformation, allowing for tailored manipulation and analysis. By simplifying and automating the data ingestion process, Tile saves valuable time and resources, enabling data developers to focus on building applications and uncovering insights from their data. 
 
 ### Orchestration
 
-Easily build, run, and orchestrate data pipelines - allowing you to efficiently manage, schedule, and monitor multiple data processing tasks, ensuring that dependencies are met and errors are handled gracefully. By automating and centralizing pipeline management, Tile projects eliminates manual intervention, reduces operational overhead, and accelerates your path to insights. 
-
+Easily build, run, and orchestrate data pipelines - allowing you to efficiently manage, schedule, and monitor multiple data processing tasks, ensuring that dependencies are met and errors are handled gracefully. By automating and centralizing pipeline management, Tile projects eliminates manual intervention, reduces operational overhead, and accelerates uncovering insights. 
 
 ### Transformations
 
-Leverage the versatility of SQL and Python data transformations in our open-source Python project, enabling users to harness the power of familiar query languages and scripting. This feature allows for seamless manipulation and cleaning of data, catering to a wide range of analytical requirements. Benefit from the flexibility of both SQL and Python, and supercharge your data-driven applications with efficient, adaptable data transformations.
+Make use of SQL and Python data transformations in your Tile project, enabling developers to harness the power of familiar query languages and scripting. This support allows for seamless manipulation and cleaning of data, catering to a wide range of analytical requirements. Benefit from the flexibility of both SQL and Python, and supercharge your data-driven applications with efficient, adaptable data transformations.
 
 ### Connections
 
-Experience seamless data connections with our open-source Python project, offering built-in support for Singer Taps and Meltano integrations. Effortlessly connect to numerous data sources and enjoy streamlined data extraction, ensuring compatibility and adaptability for your data-driven applications. Capitalize on the convenience of reliable data connections and elevate your data workflows with our versatile integration options.
+Tile comes with built-in support for Singer Taps and Meltano integrations, enabling seamless data connections withing your applications. Effortlessly connect to numerous data sources and benefit from streamlined data extraction, ensuring compatibility and adaptability for your data-driven applications. Capitalize on the convenience of reliable data connections and elevate your data workflows with our versatile integration options.
 
 ### OLAP Database
 
-We use DuckDB as our OLAP (Online Analytical Processing) databases for Tile to enhance your data analysis capabilities. DuckDB provides efficient, multidimensional data analysis, making it easier to explore and manipulate large datasets in real-time. By integrating DuckDB, you can easily use both SQL and Python to rapidly work with large datasets, transform them and persist them trivially within your applications.
+We use [DuckDB](https://duckdb.org/) as our OLAP (Online Analytical Processing) database - DuckDB provides efficient, multidimensional data analysis, making it easier to explore and manipulate large datasets in real-time. By integrating DuckDB, you can easily use both SQL and Python to rapidly work with large datasets, transform them and persist them trivially within your applications.
 
 ## Input / Output
 
 ### Notifications
 
-Tile offers support for popular communication channels like Slack, Teams, and Email. Use notifications to help users stay informed about the progress and status of their data-driven applications, as well as send timely alerts for critical events or errors. By integrating these notification options, developers can ensure effective communication, improved collaboration, and prompt issue resolution within their teams.
+Tile offers support for popular communication channels like Slack, Teams, and Email. Use notifications to help users stay informed about the progress and status of their data-driven applications, as well as send timely alerts for critical events, errors, or triggers. By integrating these notification options, developers can ensure effective communication, improved collaboration, and prompt issue resolution within their teams.
 
 ### Integrations
 
 Tile comes with integrations built-in to work with external products, such as SaaS APIs, via webhooks. Python tasks can be scheduled to run in the background to perform batch processing.
 
-We also provide integrations into multiple LLMs via LangChain enabling the automated analysis of data.
+We also provide integrations into multiple LLMs via [LangChain](https://python.langchain.com/) enabling the automated analysis of data.
 
 ## Management
 
@@ -82,4 +80,4 @@ Tile comes with user management out of the box, so you can efficiently handle pe
 
 ### Admin
 
-Tile provide essential tools for logging, monitoring, deployment, and versioning. These capabilities enable developers to maintain robust applications by tracking system activity, monitoring performance, managing deployments, and handling version control. By offering comprehensive administrative support, Tile ensures that users can effectively manage their applications, optimize performance, and maintain a transparent development process.
+Tile provide essential tools for logging, monitoring, deployment, and versioning. These capabilities enable developers and admins to maintain robust applications by tracking system activity, monitoring performance, managing deployments, and handling version control. By offering comprehensive administrative support, Tile ensures that users can effectively manage and optimize their applications.

@@ -1,6 +1,6 @@
 # Tile Server
 
-A Tile Server is an server deployed that is capable of running Tile Projects. We provide Tile Server as an Open-Core product that you can freely install however has additional features for paying Enterprise customers.
+Tile Server is used to run Tile Projects, this is freely available to use and install - however as an Open-Core product it has additional features available only for Enterprise customers.
 
 Tile is distributed as a VM (Virtual Machine), which you can easily install into your own private cloud or even bare metal. 
 This allows you to have no worries about the safety of your data, nothing leaves your own environment, and fits with our [Philosophy](../philosophy.md). By running everything on your own infrastructure, we can make use of advanced features like localized LLMs that use AI to analyze your data without leaving your network.
@@ -27,4 +27,4 @@ It provides a robust management interface for seamless administration within you
 
 ## Subscription
 
-As an Open Core product, Tile Server can be downloaded and used freely without cost. However several features are only for organizations with a valid subscription plan. As part of your subscription, you will receive a _License Key_ that you can upload into your Tile Server to enable the full feature set.
+As an Open Core product, Tile Server can be downloaded and used freely without cost. However several features are only for organizations with a valid subscription plan. As part of your subscription, you will receive a _License Key_ that you can set within the Tile Server Management console to enable the Enterprise feature set.

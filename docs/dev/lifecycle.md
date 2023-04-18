@@ -6,14 +6,14 @@ flowchart LR
     A --> |Push| B[GitHub]
     B --> |CI Build| C[Docker]
     C --> |Deploy| D
-    D(Tile Server) -->|Runs| E(Marketing Analysis Product)
+    D(Tile\nServer) -->|Runs| E(Marketing Analysis\nProduct)
 ```
 
 ## Code Development
 
 As described [previously](./projects.md), it's easy to configure and build your Tile project.
 
-You can test most of your project locally during development, including using Datapanes inline Jupyter support.
+You can test most of your project's application code locally during development, including using Datapanes inline Jupyter support.
 
 We recommend you build most of your Python code as functions, that you can easily mock and test during development to check that they are working as intended.
 
@@ -33,11 +33,11 @@ To deploy your project, you first need to configure your Tile Server, this can b
 $ tile setup --server ${SERVER} --token {$TOKEN}
 ```
 
-where `$SERVER` and `$TOKEN` are values taking from the Tile Server management console.
+where `$SERVER` and `$TOKEN` are values taken from the Tile Server management console.
 
 ### Building
 
-Tile projects are built as a collection of networked and codependent container images that represent your entire project, from the Application code, to tasks, and ELT pipelines. The resulting images are pushed to Tile Server which runs them via our customised and robust continuer runtime system.
+Tile projects are built as a collection of networked and codependent container images that represent your entire project, from the Application code, to tasks, and ELT pipelines. The resulting images are pushed to Tile Server which runs them via our customized and robust container runtime system.
 
 ### Deployment
 
@@ -50,7 +50,7 @@ $ tile deploy [--config config.py]
 This will build and deploy your tile project to the Tile Server. From there you can configure it further and access it via the Tile Server interface.
 
 !!! note
-    Deployment requires Docker to be installed, even on Windows and Mac. We generally recommend using the GitOps flow instead to reduce requirements and enable a collaborative workflow
+    Deployment requires Docker to be installed, even on Windows and Mac. We generally recommend using the GitOps flow instead to simplify local requirements and enable a collaborative workflow
 
 ### Version Control and CI
 
@@ -58,13 +58,13 @@ Tile used a _GitOps_ workflow, where every Tile Project is intended to be commit
 
 Upon pushing your changes upstream, we recommend setting up a CI flow, for instance via GitHub Actions, that automate testing your project and deploying it automatically. We have built a pre-ready GitHub Action that you can use directly within your pipelines to ease this process.
 
-You can configure the pipeline to deploy upon your own requirements, for instance upon a git tag or when pushing to a specific branch. The commit hash is used as a unique version of your tile project that is used to version it upon deployment.
+You can configure the pipeline to deploy upon your own requirements, for instance upon a git tag or when pushing to a specific branch. The commit hash is used as a unique version of your Tile project that is used to version it upon deployment.
 
 The advantage of a GitOps flow is that you have a reproducible, audited and collaborative process to handle Tile deployments that is independent of your local developer environment.
 
 ## Updates
 
-When using a Git-based flow, updating your tile project becomes very easy. Simply make your changes, commit and push to your upstream repo, triggering your automated deployment as needed.
+When using a Git-based flow, updating your Tile project becomes very easy. Simply make your changes, commit and push to your upstream repo, triggering your automated deployment as needed.
 
 This results in a new version of the product being built and deployed to your Tile Server.
 

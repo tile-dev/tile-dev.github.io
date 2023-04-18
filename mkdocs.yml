@@ -12,8 +12,8 @@ nav:
   #- Solutions: solutions.md  # i.e. use-cases
   - Developer Docs:
     - dev/index.md
-    - Tile Server: dev/server.md
     - Tile Projects: dev/projects.md
+    - Tile Server: dev/server.md
     - Lifecycle: dev/lifecycle.md
 
 theme:
