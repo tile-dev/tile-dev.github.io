@@ -487,8 +487,8 @@
   
   
     <li class="md-nav__item">
-      <a href="dev/server/" class="md-nav__link">
-        Tile Server
+      <a href="dev/projects/" class="md-nav__link">
+        Tile Projects
       </a>
     </li>
   
@@ -501,8 +501,8 @@
   
   
     <li class="md-nav__item">
-      <a href="dev/projects/" class="md-nav__link">
-        Tile Projects
+      <a href="dev/server/" class="md-nav__link">
+        Tile Server
       </a>
     </li>
   
@@ -612,27 +612,26 @@
 
   <h1>Home</h1>
 
-<p>Introducing Tile: A Comprehensive Python Toolkit for Data Application Development</p>
-<p>Tile is an open-source Python toolkit designed to help developers build, deploy, and run full-stack data applications with ease. It offers a complete data stack in a box, including features for ELT (Extract, Load, Transform), application servers, task management, integrations, and notifications. Tile simplifies the data application development process by handling underlying complexities, allowing developers to focus on creating robust data-driven solutions. Get started with Tile and develop scalable, efficient, and maintainable data applications.</p>
+<p>Tile is an open-source Python toolkit designed to help developers build, deploy, and run full-stack data applications with ease. It offers a complete <em>data-stack in a box</em>, including features for ELT (Extract, Load, Transform), application servers, task running, integrations, and notifications. Tile simplifies the data application development process by handling underlying complexities, allowing developers to focus on creating robust data-driven solutions. Get started with Tile and develop scalable, efficient, and maintainable data applications.</p>
 <h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h2>
-<p>Tile is comprised of multiple new and reused open-source components that are carefully connected to gether to provide a highly functionality toolkit for building data products. See <a href="architecture/">Architecture</a> for more information.</p>
+<p>Tile is comprised of multiple new and existing open-source components that are carefully chosen to work together to provide a highly functionality toolkit for building data products. See <a href="architecture/">Architecture</a> for more information.</p>
 <figure>
 <p><img alt="Tile Architecture" loading="lazy" src="assets/Tile-Architecture.png" />
   </p>
 <figcaption>Tile Project Architecture</figcaption>
 </figure>
 <h2 id="process">Process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h2>
-<p>Tile is more than the core SDK and components for building data products, and handles entire development lifecycle, including the deployment and running of Tile Apps.</p>
-<p>We provide a code-first approach that uses many best practices of the devops ecosystem,  including CI and containers, and run user's applications single-tenant on our custom Tile OS running the Tile Server. This easily allows you to build and deploy multiple packages all running on the same, high-performance server and accessible by all your users.</p>
+<p>Tile is more than just a framework, handling the entire development lifecycle, including the deployment and running of Tile Apps.</p>
+<p>We provide a code-first approach that builds upon many best practices from the DevOps world, including the use of CI and containers. User applications are run as isolated instances on our custom single-tenant Tile OS running the Tile Server. This easily allows you to build and deploy multiple packages all running on the same, high-performance server and accessible by all your users.</p>
 <pre class="mermaid"><code>flowchart LR
     A[Code] --&gt; |Commit| A
     A --&gt; |Push| B[GitHub]
     B --&gt; |CI Build| C[Docker]
     C --&gt; |Deploy| D
-    D(Tile Server) --&gt;|Runs| E(Marketing Analysis Product)</code></pre>
+    D(Tile\nServer) --&gt;|Runs| E(Marketing Analysis\nProduct)</code></pre>
 <h2 id="why-use-it">Why use it<a class="headerlink" href="#why-use-it" title="Permanent link">&para;</a></h2>
 <p>Tile enables developers to build production-ready data applications efficiently. By handling the underlying complexities and providing a robust set of tools, Tile streamlines the development process and reduces the time and effort required to create reliable, high-performance applications.</p>
-<p>Data applications are essential for sharing insights with stakeholders. They allow for the effective communication of complex data-driven findings through visualizations, dashboards, and reports. Tile simplifies this process by offering built-in integrations and tools for creating these data visualizations, making it easier for developers to present valuable insights to decision-makers.</p>
+<p>Data applications are essential for sharing insights with stakeholders. They allow for the effective communication of complex data-driven findings through visualizations, dashboards, and reports. Tile simplifies this process by offering built-in integrations and APIs for creating these data visualizations, making it easier for developers to present valuable insights in an interactive manner to decision-makers.</p>
 <p>Tile facilitates the development and management of internal and custom data-driven processes. Developers can create tailored solutions that automate data extraction, transformation, and analysis, resulting in more efficient workflows and better-informed decision-making. By using Tile, developers can focus on solving specific business problems with data-driven applications that are designed to meet their unique needs.</p>
 <h2 id="benefits">Benefits<a class="headerlink" href="#benefits" title="Permanent link">&para;</a></h2>
 <p>Tile offers numerous benefits to developers, making it an excellent choice for data application development. Some of these advantages include:</p>
@@ -642,7 +641,7 @@
 <p>Integrations: Tile offers a range of pre-built integrations, allowing developers to seamlessly connect their data applications with other services and tools, enhancing their functionality and enabling data-driven decision-making across platforms.</p>
 <p>Analytics database: Tile includes support for analytics databases, enabling developers to store, query, and analyze large volumes of data efficiently within their applications.</p>
 <p>Background and scheduled tasks: Tile simplifies the management of background and scheduled tasks, allowing developers to automate processes and run data-driven tasks at specific intervals or in response to specific events.</p>
-<p>By leveraging these benefits, developers can create scalable, efficient, and maintainable data applications that meet their unique needs and drive business growth.</p>
+<p>By leveraging these features, developers can create scalable, efficient, and maintainable data applications that meet their unique needs and drive business growth.</p>
 <h2 id="community">Community<a class="headerlink" href="#community" title="Permanent link">&para;</a></h2>
 <p><strong>GitHub</strong>
 Our centre of gravity is our GitHub where we build in the open. Come and get involved!</p>

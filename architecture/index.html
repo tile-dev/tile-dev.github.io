@@ -595,8 +595,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev/server/" class="md-nav__link">
-        Tile Server
+      <a href="../dev/projects/" class="md-nav__link">
+        Tile Projects
       </a>
     </li>
   
@@ -609,8 +609,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../dev/projects/" class="md-nav__link">
-        Tile Projects
+      <a href="../dev/server/" class="md-nav__link">
+        Tile Server
       </a>
     </li>
   
@@ -838,8 +838,8 @@
 <h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
 <p>Tile is split up into multiple sections comprised of several components - below we'll list a few of them and how they help you build Data Products.</p>
 <h2 id="analytics-code">Analytics Code<a class="headerlink" href="#analytics-code" title="Permanent link">&para;</a></h2>
-<p>Tile uses the Datapane Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.</p>
-<p>You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, Matplotlib,and more, and it works direct from Jupyter.</p>
+<p>Tile uses the popular <a href="https://github.com/datapane/datapane">Datapane</a> Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.</p>
+<p>You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, and Matplotlib, and it works direct from Jupyter.</p>
 <h3 id="reportings-and-dashboarding">Reportings and Dashboarding<a class="headerlink" href="#reportings-and-dashboarding" title="Permanent link">&para;</a></h3>
 <p>Datapane provides data reporting and dashboard functionality, which allows users to create visually engaging reports and interactive dashboards. This helps you communicate insights effectively and enables stakeholders to make data-driven decisions. By providing clear visualizations and a user-friendly interface, developers can easily share their findings and monitor key performance indicators within their applications.</p>
 <h3 id="datapane-components">Datapane Components<a class="headerlink" href="#datapane-components" title="Permanent link">&para;</a></h3>
@@ -847,29 +847,29 @@
 <h3 id="datapane-tasks">Datapane Tasks<a class="headerlink" href="#datapane-tasks" title="Permanent link">&para;</a></h3>
 <p>Our open-source Python project includes features for managing background and scheduled tasks, which automate updates of datasets and the execution of analytics code. These capabilities allow developers to set up routine data refreshes and run analysis tasks without manual intervention, ensuring timely insights and efficient resource usage. By automating these processes, users can concentrate on exploring data and developing valuable applications, while the system effectively handles the underlying tasks.</p>
 <h3 id="app-databases">App Databases<a class="headerlink" href="#app-databases" title="Permanent link">&para;</a></h3>
-<p>Your Data Products may need to store application-specific data that is independent of your analytics data, such as user preferences, for instance.</p>
-<p>To support this, Tile provides multiple persistance options for your Data Applications, including Document Databases )like Mongo DB), persistent caches, and Blob Storage (such as S3). These can be updated automatically, or as part of scheduled tasks, for instance to update a trained model out-of-band for use within a Data Product.</p>
+<p>Your Data Products may need to store application-specific data independent of your analytics data, such as user preferences.</p>
+<p>Tile provides multiple persistance options for your Data Applications, including Document Databases (like Mongo DB), persistent caches, and Blob Storage (such as S3). These can be updated automatically, or as part of scheduled tasks, for instance, to update a trained model out-of-band for use within a Data Product.</p>
 <h2 id="elt">ELT<a class="headerlink" href="#elt" title="Permanent link">&para;</a></h2>
-<p>Our ELT functionality empowers users to efficiently extract data from a wide array of sources, including databases, APIs, and file formats, ensuring seamless integration with virtually any data source. Once the data is extracted, it is loaded the projects OLAP DBfor further transformation, allowing for tailored manipulation and analysis. By simplifying and automating the data ingestion process, Tile saves valuable time and resources, enabling developers and data scientists to focus on building applications and uncovering insights from their data. </p>
+<p>Our ELT functionality empowers users to efficiently extract data from a wide array of sources, including databases, APIs, and file formats, ensuring seamless integration with virtually any data source. Once the data is extracted, it is loaded the projects OLAP DB for further transformation, allowing for tailored manipulation and analysis. By simplifying and automating the data ingestion process, Tile saves valuable time and resources, enabling data developers to focus on building applications and uncovering insights from their data. </p>
 <h3 id="orchestration">Orchestration<a class="headerlink" href="#orchestration" title="Permanent link">&para;</a></h3>
-<p>Easily build, run, and orchestrate data pipelines - allowing you to efficiently manage, schedule, and monitor multiple data processing tasks, ensuring that dependencies are met and errors are handled gracefully. By automating and centralizing pipeline management, Tile projects eliminates manual intervention, reduces operational overhead, and accelerates your path to insights. </p>
+<p>Easily build, run, and orchestrate data pipelines - allowing you to efficiently manage, schedule, and monitor multiple data processing tasks, ensuring that dependencies are met and errors are handled gracefully. By automating and centralizing pipeline management, Tile projects eliminates manual intervention, reduces operational overhead, and accelerates uncovering insights. </p>
 <h3 id="transformations">Transformations<a class="headerlink" href="#transformations" title="Permanent link">&para;</a></h3>
-<p>Leverage the versatility of SQL and Python data transformations in our open-source Python project, enabling users to harness the power of familiar query languages and scripting. This feature allows for seamless manipulation and cleaning of data, catering to a wide range of analytical requirements. Benefit from the flexibility of both SQL and Python, and supercharge your data-driven applications with efficient, adaptable data transformations.</p>
+<p>Make use of SQL and Python data transformations in your Tile project, enabling developers to harness the power of familiar query languages and scripting. This support allows for seamless manipulation and cleaning of data, catering to a wide range of analytical requirements. Benefit from the flexibility of both SQL and Python, and supercharge your data-driven applications with efficient, adaptable data transformations.</p>
 <h3 id="connections">Connections<a class="headerlink" href="#connections" title="Permanent link">&para;</a></h3>
-<p>Experience seamless data connections with our open-source Python project, offering built-in support for Singer Taps and Meltano integrations. Effortlessly connect to numerous data sources and enjoy streamlined data extraction, ensuring compatibility and adaptability for your data-driven applications. Capitalize on the convenience of reliable data connections and elevate your data workflows with our versatile integration options.</p>
+<p>Tile comes with built-in support for Singer Taps and Meltano integrations, enabling seamless data connections withing your applications. Effortlessly connect to numerous data sources and benefit from streamlined data extraction, ensuring compatibility and adaptability for your data-driven applications. Capitalize on the convenience of reliable data connections and elevate your data workflows with our versatile integration options.</p>
 <h3 id="olap-database">OLAP Database<a class="headerlink" href="#olap-database" title="Permanent link">&para;</a></h3>
-<p>We use DuckDB as our OLAP (Online Analytical Processing) databases for Tile to enhance your data analysis capabilities. DuckDB provides efficient, multidimensional data analysis, making it easier to explore and manipulate large datasets in real-time. By integrating DuckDB, you can easily use both SQL and Python to rapidly work with large datasets, transform them and persist them trivially within your applications.</p>
+<p>We use <a href="https://duckdb.org/">DuckDB</a> as our OLAP (Online Analytical Processing) database - DuckDB provides efficient, multidimensional data analysis, making it easier to explore and manipulate large datasets in real-time. By integrating DuckDB, you can easily use both SQL and Python to rapidly work with large datasets, transform them and persist them trivially within your applications.</p>
 <h2 id="input-output">Input / Output<a class="headerlink" href="#input-output" title="Permanent link">&para;</a></h2>
 <h3 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Permanent link">&para;</a></h3>
-<p>Tile offers support for popular communication channels like Slack, Teams, and Email. Use notifications to help users stay informed about the progress and status of their data-driven applications, as well as send timely alerts for critical events or errors. By integrating these notification options, developers can ensure effective communication, improved collaboration, and prompt issue resolution within their teams.</p>
+<p>Tile offers support for popular communication channels like Slack, Teams, and Email. Use notifications to help users stay informed about the progress and status of their data-driven applications, as well as send timely alerts for critical events, errors, or triggers. By integrating these notification options, developers can ensure effective communication, improved collaboration, and prompt issue resolution within their teams.</p>
 <h3 id="integrations">Integrations<a class="headerlink" href="#integrations" title="Permanent link">&para;</a></h3>
 <p>Tile comes with integrations built-in to work with external products, such as SaaS APIs, via webhooks. Python tasks can be scheduled to run in the background to perform batch processing.</p>
-<p>We also provide integrations into multiple LLMs via LangChain enabling the automated analysis of data.</p>
+<p>We also provide integrations into multiple LLMs via <a href="https://python.langchain.com/">LangChain</a> enabling the automated analysis of data.</p>
 <h2 id="management">Management<a class="headerlink" href="#management" title="Permanent link">&para;</a></h2>
 <h3 id="user-management">User Management<a class="headerlink" href="#user-management" title="Permanent link">&para;</a></h3>
 <p>Tile comes with user management out of the box, so you can efficiently handle permissions, Role-Based Access Control (RBAC), and SAML-based single sign-on. This functionality allows you to define and manage access levels for different users, ensuring data security and compliance within your application. By providing granular control over user access, developers can build Data Projects effectively while safeguarding sensitive information and maintaining a secure environment.</p>
 <h3 id="admin">Admin<a class="headerlink" href="#admin" title="Permanent link">&para;</a></h3>
-<p>Tile provide essential tools for logging, monitoring, deployment, and versioning. These capabilities enable developers to maintain robust applications by tracking system activity, monitoring performance, managing deployments, and handling version control. By offering comprehensive administrative support, Tile ensures that users can effectively manage their applications, optimize performance, and maintain a transparent development process.</p>
+<p>Tile provide essential tools for logging, monitoring, deployment, and versioning. These capabilities enable developers and admins to maintain robust applications by tracking system activity, monitoring performance, managing deployments, and handling version control. By offering comprehensive administrative support, Tile ensures that users can effectively manage and optimize their applications.</p>
 
 
 

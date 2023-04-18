@@ -420,20 +420,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../server/" class="md-nav__link">
-        Tile Server
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -517,6 +503,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server/" class="md-nav__link">
+        Tile Server
+      </a>
     </li>
   
 
@@ -637,9 +637,9 @@
   <h1>Tile Projects</h1>
 
 <p>Developing a <a href="../../architecture/">Tile project</a> is super simple, and there are several <a href="../../templates/">reference projects and templates</a> freely available on GitHub that you can use to get started with. 
-By default a Tile project includes everything needed to build, run, and deploy an internal Data Project.</p>
+By default a Tile project includes everything needed to build, run, and deploy a fully-featured internal Data Project.</p>
 <h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
-<p>The steps invovled in building a Tile project include,</p>
+<p>The steps involved in building a Tile project include,</p>
 <pre class="mermaid"><code>flowchart LR
     A(Configure) --&gt; B(Develop)
     B --&gt; C(Deploy)</code></pre>
@@ -653,9 +653,9 @@ By default a Tile project includes everything needed to build, run, and deploy a
 <p>Tile projects are defined within a directory and are configured via two complementary methods,
 - The filesystem layout
 - the <code>config.py</code> Python-based Tile project configuration</p>
-<p>Each directory represents a tile project, that we recommend forms it's own git repository, and from there can be deployed to a Tile Server (see <a href="../lifecycle/">lifecycle</a>).</p>
+<p>Each directory represents a Tile project - we recommend the project directory forms a <code>git</code> repository, which can then be deployed to a <a href="../server/">Tile Server</a> (see <a href="../lifecycle/">lifecycle</a>).</p>
 <h3 id="directory-layout">Directory Layout<a class="headerlink" href="#directory-layout" title="Permanent link">&para;</a></h3>
-<p>Tile projects follow a known filesystem layout, to make jumping between projects much simpler. The layout below describes that basic layout of a Tile Project, including the configuration and all python code and data used for the solution.</p>
+<p>Tile projects follow a known filesystem layout, to make switching between projects much simpler. The layout below describes that basic layout of a Tile Project, including the configuration and all python code and data used for the solution.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>my-tile-project/
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│<span class="w">  </span><span class="c1"># tile configuration</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├─<span class="w"> </span>config.py
@@ -677,9 +677,9 @@ By default a Tile project includes everything needed to build, run, and deploy a
 </code></pre></div>
 <h3 id="configuration-file">Configuration File<a class="headerlink" href="#configuration-file" title="Permanent link">&para;</a></h3>
 <p>Tile projects are configured via a single Python script called <code>config.py</code>. </p>
-<p>We use python even for configuration, over formats like <code>yaml</code>, as we cna make use of standard Python constructs to make the configuration more readable.</p>
-<p>The Tile configuration is a single Python object that describes the Tile Project, this is comprised from multiple containing objects that describes how each subsystem works.</p>
-<p>An example <code>config.py</code> is as below:</p>
+<p>We use Python for configuration over formats like <code>yaml</code>, to make use of standard Python constructs resulting in a more readable configuration.</p>
+<p>The Tile configuration is a single Python object that describes the Tile Project, this is composed from multiple containing objects that describes how each subsystem works.</p>
+<p>An example <code>config.py</code> is as follows:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">tile.package</span> <span class="kn">import</span> <span class="n">Package</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">package</span> <span class="o">=</span> <span class="n">Package</span><span class="p">(</span>
@@ -716,18 +716,18 @@ By default a Tile project includes everything needed to build, run, and deploy a
 <a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>  <span class="o">...</span>
 </code></pre></div>
 <h2 id="project-development">Project Development<a class="headerlink" href="#project-development" title="Permanent link">&para;</a></h2>
-<p>You can develop your Tile project using all of the included components - we provide Python-based interfaces and wrappers around all of them for easy use within your code.</p>
-<p>You can write all your your Data Application code and tasks using <a href="https://github.com/datapane/datapane">Datapane</a>'s View framework - Tile will look for a Datapane Application within <code>app.py</code> and use it (Datapane also has great notebook support so will also look for notebooks called <code>app.ipynb</code>). You can find more from the <a href="https://docs.datapane.com">Datapane Application docs</a>.</p>
-<p>Tile also builds upon several other components that you can use from your Python code, you can find their documentation on their specific pages, including</p>
+<p>Tile projects are comprised of multiple open-source components, such as integrations, notifications, etc. - we provide Python-based interfaces and wrappers around all of them for easy use within your code.</p>
+<p>The <a href="https://github.com/datapane/datapane">Datapane</a> View framework is used to write all your Data Application code and tasks - Tile will look for a Datapane Application called <code>app.py</code> and automatically use it (Datapane also has great notebook support so Tile will also look for notebooks called <code>app.ipynb</code>). You can find more information about working with Datapane from the <a href="https://docs.datapane.com">docs</a>.</p>
+<p>Tile Projects also build upon several other core components, including:</p>
 <ul>
 <li><a href="https://duckdb.org/docs/" target="_blank">DuckDB</a></li>
 <li><a href="https://hub.meltano.com/" target="_blank">Meltano Connectors</a></li>
 <li><a href="https://luigi.readthedocs.io/" target="_blank">Luigi</a></li>
 </ul>
-<p>Tile projects can be developed locally or using remote development platforms such as GitHub Codespaces, in addition we support all Notebook environments, including JupyterLab, VSCode Notebooks, and more.</p>
+<p>Tile projects can be developed locally or using remote development platforms such as GitHub Codespaces, in addition we support all common Notebook environments, including JupyterLab, VSCode Notebooks, and more.</p>
 <h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
 <p>Tile projects can be easily deployed to a Tile server, either directly from the project file, or via a CI-based mechanism such as GitHub Actions. We generally recommend the latter approach when building more robust systems however the former is useful when first getting started.</p>
-<p>Deployment is part of the Tile Project lifecycle covered in the <a href="../lifecycle/">next section</a>.</p>
+<p>Deployment forms part of the Tile Project <a href="../lifecycle/">lifecycle</a>.</p>
 
 
 
@@ -753,7 +753,7 @@ By default a Tile project includes everything needed to build, run, and deploy a
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../server/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tile Server" rel="prev">
+        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Overview" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -762,20 +762,20 @@ By default a Tile project includes everything needed to build, run, and deploy a
               <span class="md-footer__direction">
                 Previous
               </span>
-              Tile Server
+              Overview
             </div>
           </div>
         </a>
       
       
         
-        <a href="../lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: Lifecycle" rel="next">
+        <a href="../server/" class="md-footer__link md-footer__link--next" aria-label="Next: Tile Server" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Lifecycle
+              Tile Server
             </div>
           </div>
           <div class="md-footer__button md-icon">
