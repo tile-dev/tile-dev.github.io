@@ -53,16 +53,12 @@
   
     
     
-      
     
     
     
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -70,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#components" class="md-skip">
+        <a href="#analytics-code" class="md-skip">
           Skip to content
         </a>
       
@@ -110,30 +106,6 @@
         </div>
       </div>
     </div>
-    
-      <form class="md-header__option" data-md-component="palette">
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-          
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-          
-          
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
     
     
     
@@ -376,13 +348,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#analytics-code" class="md-nav__link">
     Analytics Code
   </a>
@@ -391,8 +356,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reportings-and-dashboarding" class="md-nav__link">
-    Reportings and Dashboarding
+  <a href="#web-apps" class="md-nav__link">
+    Web apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-and-dashboards" class="md-nav__link">
+    Reports and Dashboards
   </a>
   
 </li>
@@ -664,13 +636,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    Components
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#analytics-code" class="md-nav__link">
     Analytics Code
   </a>
@@ -679,8 +644,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#reportings-and-dashboarding" class="md-nav__link">
-    Reportings and Dashboarding
+  <a href="#web-apps" class="md-nav__link">
+    Web apps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reports-and-dashboards" class="md-nav__link">
+    Reports and Dashboards
   </a>
   
 </li>
@@ -828,20 +800,20 @@
 
   <h1>Architecture</h1>
 
-<p>Tile is architected to provide all the features you need to build robust and production-ready Data Projects, essentially a <em>Data SDK in a box</em>.</p>
-<p>Tile is built from multiple components that have been selected to work well together - we build on top of great open-source tools in the Python ecosystem, connecting them together and providing a integrated way to make use of them all.</p>
+<p>Tile's architecture gives you all the moving pieces to to build robust and production-ready data products. You can think of it as a <em>data stack in a box</em>.</p>
+<p>This stack is comprised of multiple open-source components which are integrated together using a unified API. Tile provides a simple way to define, configure, and run data products comprised of these components.   </p>
 <figure>
-<p><img alt="Tile Architecture" loading="lazy" src="../assets/Tile-Architecture-v1.png" />
+<p><img alt="Tile Architecture" loading="lazy" src="../assets/tile-arch-2.png" style="width:75%; margin:auto" />
   </p>
 <figcaption>Tile Project Architecture</figcaption>
 </figure>
-<h2 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h2>
-<p>Tile is split up into multiple sections comprised of several components - below we'll list a few of them and how they help you build Data Products.</p>
+<p>Tile is comprised of multiple components which help you build end-to-end data products. </p>
 <h2 id="analytics-code">Analytics Code<a class="headerlink" href="#analytics-code" title="Permanent link">&para;</a></h2>
-<p>Tile uses the popular <a href="https://github.com/datapane/datapane">Datapane</a> Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.</p>
-<p>You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, and Matplotlib, and it works direct from Jupyter.</p>
-<h3 id="reportings-and-dashboarding">Reportings and Dashboarding<a class="headerlink" href="#reportings-and-dashboarding" title="Permanent link">&para;</a></h3>
-<p>Datapane provides data reporting and dashboard functionality, which allows users to create visually engaging reports and interactive dashboards. This helps you communicate insights effectively and enables stakeholders to make data-driven decisions. By providing clear visualizations and a user-friendly interface, developers can easily share their findings and monitor key performance indicators within their applications.</p>
+<p>Tile uses <a href="https://github.com/datapane/datapane">Datapane</a> to provide support for building web apps, reports, and dashboards.</p>
+<h3 id="web-apps">Web apps<a class="headerlink" href="#web-apps" title="Permanent link">&para;</a></h3>
+<p>Build data web applications </p>
+<h3 id="reports-and-dashboards">Reports and Dashboards<a class="headerlink" href="#reports-and-dashboards" title="Permanent link">&para;</a></h3>
+<p>Create interactive reports and dashboards using 100% Python, using popular Python data science libraries, such as Pandas, Altair, and Matplotlib.</p>
 <h3 id="datapane-components">Datapane Components<a class="headerlink" href="#datapane-components" title="Permanent link">&para;</a></h3>
 <p>Datapane provides a suite of Python-based components and functions designed to perform live data analysis. Create and reuse components that allow you to process and analyze data in real-time, enabling them to uncover insights and make data-driven decisions quickly. By providing a Python-centric approach, your code can benefit from the language's extensive libraries and familiar syntax while building responsive, high-performance data-driven applications.</p>
 <h3 id="datapane-tasks">Datapane Tasks<a class="headerlink" href="#datapane-tasks" title="Permanent link">&para;</a></h3>
