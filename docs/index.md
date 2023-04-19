@@ -20,7 +20,7 @@ Tile is an open-source framework for building end-to-end data products using Pyt
 
 Tile provides the entire data stack of an analytics product, from web apps, reporting, OLAP, ETL, and notifications, in a single format. Tile is infrastructure as code, with all components defined and configured in Python.
 
- See [Architecture](./architecture.md) for more information.
+See [Architecture](./architecture.md) for more information.
 
 This entire stack is defined as code in a single Python file, such as this one:
 
@@ -50,12 +50,6 @@ package = Package(
 ```
 
 When you can build and run on Tile. Tile handles the full application lifecycle, including the deployment and running of Tile Apps.
-
-
-<figure markdown>
-  ![Tile Architecture](./assets/Tile-Architecture-v1.png){ loading=lazy }
-  <figcaption>Tile Project Architecture</figcaption>
-</figure>
 
 ## Features
 

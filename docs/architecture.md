@@ -8,8 +8,7 @@ Tile's architecture gives you all the moving pieces to to build robust and produ
 This stack is comprised of multiple open-source components which are integrated together using a unified API. Tile provides a simple way to define, configure, and run data products comprised of these components.   
 
 <figure markdown>
-<<<<<<< Updated upstream
-Tile Architecture](./assets/tile-arch-2.png){ loading=lazy style='width:75%; margin:auto'}
+  ![Tile Architecture](./assets/tile-arch-2.png){ loading=lazy style='width:75%; margin:auto'}
   <figcaption>Tile Project Architecture</figcaption>
 </figure>
 
