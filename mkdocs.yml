@@ -33,24 +33,24 @@ theme:
     - navigation.indexes
     - toc.follow
     #- content.tabs.link
-  palette:
-    # include_sidebar: true
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: blue grey
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  # palette:
+  #   # include_sidebar: true
+  #   # Palette toggle for light mode
+  #   - media: "(prefers-color-scheme: light)"
+  #     scheme: default
+  #     primary: blue grey
+  #     accent: blue
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: Switch to dark mode
+  #   # Palette toggle for dark mode
+  #   - media: "(prefers-color-scheme: dark)"
+  #     scheme: slate
+  #     primary: blue grey
+  #     accent: blue
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: Switch to light mode
   font: 
     text: Inter
     code: IBM Plex Mono

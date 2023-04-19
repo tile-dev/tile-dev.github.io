@@ -3,28 +3,29 @@ hide:
   - navigation
 ---
 
-Tile is architected to provide all the features you need to build robust and production-ready Data Projects, essentially a _Data SDK in a box_.
+Tile's architecture gives you all the moving pieces to to build robust and production-ready data products. You can think of it as a _data stack in a box_.
 
-Tile is built from multiple components that have been selected to work well together - we build on top of great open-source tools in the Python ecosystem, connecting them together and providing a integrated way to make use of them all.
+This stack is comprised of multiple open-source components which are integrated together using a unified API. Tile provides a simple way to define, configure, and run data products comprised of these components.   
 
 <figure markdown>
-  ![Tile Architecture](./assets/Tile-Architecture-v1.png){ loading=lazy }
+<<<<<<< Updated upstream
+Tile Architecture](./assets/tile-arch-2.png){ loading=lazy style='width:75%; margin:auto'}
   <figcaption>Tile Project Architecture</figcaption>
 </figure>
 
-## Components
-
-Tile is split up into multiple sections comprised of several components - below we'll list a few of them and how they help you build Data Products.
+Tile is comprised of multiple components which help you build end-to-end data products. 
 
 ## Analytics Code
 
-Tile uses the popular [Datapane](https://github.com/datapane/datapane) Python library to provide support for building Application Servers, Reports, and Dashboards that make up your project.
+Tile uses [Datapane](https://github.com/datapane/datapane) to provide support for building web apps, reports, and dashboards.
 
-You can use Datapane with many popular Python data science libraries, such as Pandas, Altair, and Matplotlib, and it works direct from Jupyter.
 
-### Reportings and Dashboarding
+### Web apps
+Build data web applications 
 
-Datapane provides data reporting and dashboard functionality, which allows users to create visually engaging reports and interactive dashboards. This helps you communicate insights effectively and enables stakeholders to make data-driven decisions. By providing clear visualizations and a user-friendly interface, developers can easily share their findings and monitor key performance indicators within their applications.
+### Reports and Dashboards
+
+Create interactive reports and dashboards using 100% Python, using popular Python data science libraries, such as Pandas, Altair, and Matplotlib.
 
 ### Datapane Components
 
