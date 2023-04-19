@@ -14,7 +14,7 @@ Tile is comprised of multiple new and existing open-source components that are c
 
 
 <figure markdown>
-  ![Tile Architecture](./assets/Tile-Architecture.png){ loading=lazy }
+  ![Tile Architecture](./assets/Tile-Architecture-v1.png){ loading=lazy }
   <figcaption>Tile Project Architecture</figcaption>
 </figure>
 

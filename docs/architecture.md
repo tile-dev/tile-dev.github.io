@@ -8,7 +8,7 @@ Tile is architected to provide all the features you need to build robust and pro
 Tile is built from multiple components that have been selected to work well together - we build on top of great open-source tools in the Python ecosystem, connecting them together and providing a integrated way to make use of them all.
 
 <figure markdown>
-  ![Tile Architecture](./assets/Tile-Architecture.png){ loading=lazy }
+  ![Tile Architecture](./assets/Tile-Architecture-v1.png){ loading=lazy }
   <figcaption>Tile Project Architecture</figcaption>
 </figure>
 
